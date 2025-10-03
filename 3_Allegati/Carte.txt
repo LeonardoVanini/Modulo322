@@ -5,10 +5,10 @@ inserire qui le carte es.
 2.Buongiorno
 
 
-1.Menu
+-1.Menu
 2.Profilo
-3.Schermata iniziale
-4.Impostazioni
+-3.Schermata iniziale
+-4.Impostazioni
 5.Personalizzazione
 6.Taskbar
 7.Notifiche
@@ -22,11 +22,12 @@ inserire qui le carte es.
 15.Taccuino
 16.Attività
 17.Assistente
-18.Bohdan
-19.Priorità
+-18.Bohdan
+-19.Priorità
 20.Allenamento
 21.Abitudini
 22.Alimentazione
 23.Calendario
 24.Attività imminenti
 25.Stile
+-26.Pubblicità
