@@ -1,0 +1,26 @@
+Nome della storia: Priorità
+Descrizione: come cliente, devo poter vedere quali attività sono più importanti, in modo da poter organizzarmi meglio per la giornata.
+
+Nome della storia: Notifiche
+Descrizione: come cliente, devo ricevere delle notifiche, in modo da poter sapere se ci sono scadenze o esercizi richiesti.
+
+Nome della storia: Badge
+Descrizione: come cliente, voglio avere dei badge, in modo da poter avere degli obbiettivi a cui arrivare con quotidianità.
+
+Nome della storia: Scoreboard
+Descrizione: come cliente, desidero avere una sezione dove vedo il punteggio ottenuto, in modo da poter confrontare con amici o conoscenti.
+
+Nome della storia: Assistente
+Descrizione: come cliente, desidero avere un assistente, in modo che mi consiglia le attività e gli esercizi del giorno.
+
+Nome della storia: Taccuino
+Descrizione: come cliente, desidero avere un taccuino, in modo da poter annotare note e commenti riguardanti attività.
+
+Nome della storia: Profilo
+Descrizione: come cliente, desidero avere un profilo, in modo da vedere le mie caratteristiche, obbiettivi, badge, e altre informazioni.
+
+Nome della storia: Calendario
+Descrizione: come cliente, desidero avere un calendario, in modo da vedere le attività per i vari giorni del mese.
+
+Nome della storia: Attività
+Descrizione: come cliente, desidero avere un elemento attività, in modo da poter inserire orario, priorità , colore, note, a una certa data.
