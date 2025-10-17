@@ -44,4 +44,10 @@ colore per attività
 yehor: app per studio, conentrarsi a studiaree, consigli allo studo, quanto studio per esame, challenche di studio al giorno monitorare il sonno ,
 all'apertura routine di studio, countdown fino al prossimo evento notifiche e timer, per lo stato di avanzamento progetto/tempo con grafico e cosigli su avanzamento, vari momenti e notifiche, start minimalista poi dettagli, personalizzazione ricercata immagini sfondo colore sfondo
 
-riccardo:
+riccardo: Allenamenti -> cosa allenare quando e che esercizi fare e come farli.
+
+fabe: Attivita giornaliera con organizzazione e proposte.
+
+
+
+
