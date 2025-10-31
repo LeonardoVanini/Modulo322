@@ -31,7 +31,6 @@ Descrizione: come cliente, desidero avere un elemento attività, in modo da pote
 
 
  HOME – SCHERMATA INIZIO
-Come utente, voglio visualizzare i nomi dei coach (Nicola, Leonardo, Giampaolo), così posso sapere chi mi guida.
 
 Come utente, voglio accedere rapidamente alle sezioni “Attività”, “Allenamento”, “Alimentazione”, “Wellness”, così posso gestire il mio benessere in modo integrato.
 
