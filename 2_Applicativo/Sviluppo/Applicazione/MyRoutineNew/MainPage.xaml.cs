@@ -1,4 +1,4 @@
-﻿namespace MyRoutine
+﻿namespace MyRoutineNew
 {
     public partial class MainPage : ContentPage
     {
@@ -8,7 +8,6 @@
         {
             InitializeComponent();
         }
-        //test push
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
