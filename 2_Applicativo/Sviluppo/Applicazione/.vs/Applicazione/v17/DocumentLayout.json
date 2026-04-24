@@ -1,25 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\",
+  "WorkspaceRootPath": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|h:\\github\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\myroutinenew.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\myroutinenew.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\myroutinenew.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|h:\\github\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\statistiche.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\statistiche.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\statistiche.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|h:\\github\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\routine.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\routine.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\routine.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|h:\\github\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|h:\\github\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\profilo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\profilo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\profilo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -35,10 +47,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyRoutineNew",
-              "DocumentMoniker": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
+              "Title": "MainCS.cs",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T12:36:19.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml.cs",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T12:08:21.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-24T12:08:11.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyRoutineNew.csproj",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
               "RelativeDocumentMoniker": "MyRoutineNew\\MyRoutineNew.csproj",
-              "ToolTip": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
               "RelativeToolTip": "MyRoutineNew\\MyRoutineNew.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -47,11 +98,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Statistiche.xaml",
-              "DocumentMoniker": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Statistiche.xaml",
-              "ToolTip": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
               "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -60,11 +111,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Routine.xaml",
-              "DocumentMoniker": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Routine.xaml",
-              "ToolTip": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml",
               "RelativeToolTip": "MyRoutineNew\\Routine.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -73,11 +124,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Impostazioni.xaml",
-              "DocumentMoniker": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Impostazioni.xaml",
-              "ToolTip": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
               "RelativeToolTip": "MyRoutineNew\\Impostazioni.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -86,11 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Profilo.xaml",
-              "DocumentMoniker": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml",
+              "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Profilo.xaml",
-              "ToolTip": "H:\\GitHub\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml",
               "RelativeToolTip": "MyRoutineNew\\Profilo.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
