@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyRoutineNew.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace MyRoutineNew
         private static DateTime _dataOra;
         private static string _tema;
         private static bool _task;
+        private static Attivita attivita;
 
 
         //implementazioni future
@@ -49,7 +51,11 @@ namespace MyRoutineNew
             get { return _task; }
             set { _task = value; }
         }
-
+        public static Attivita Attivita
+        {
+            get { return attivita; }
+            set { attivita = value; }
+        }
 
         //metodi di navigazione
         public static async void PerImpostazioni(INavigation navigation)
