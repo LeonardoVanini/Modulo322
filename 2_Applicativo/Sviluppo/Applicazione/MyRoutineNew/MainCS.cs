@@ -8,6 +8,7 @@ namespace MyRoutineNew
 {
     public class MainCS
     {
+        //variabili statiche
         private static string _nome;
         private static string _cognome;
         private static DateTime _dataOra;
@@ -22,7 +23,7 @@ namespace MyRoutineNew
 
 
 
-
+        //metodi getter/setter
         public static string Nome
         {
             get{ return _nome; }
@@ -50,21 +51,22 @@ namespace MyRoutineNew
         }
 
 
-        private static async void PerImpostazioni()
+        //metodi di navigazione
+        public static async void PerImpostazioni(INavigation navigation)
         {
-            await Navigation.PushAsync(new Impostazioni());
+            await navigation.PushAsync(new Impostazioni());
         }
-        private async void PerProfilo()
+        public static async void PerProfilo(INavigation navigation)
         {
-            await Navigation.PushAsync(new Profilo());
+            await navigation.PushAsync(new Profilo());
         }
-        private async void PerRoutine()
+        public static async void PerRoutine(INavigation navigation)
         {
-            await Navigation.PushAsync(new Routine());
+            await navigation.PushAsync(new Routine());
         }
-        private async void PerStatistiche()
+        public static async void PerStatistiche(INavigation navigation)
         {
-            await Navigation.PushAsync(new Statistiche());
+            await navigation.PushAsync(new Statistiche());
         }
 
 

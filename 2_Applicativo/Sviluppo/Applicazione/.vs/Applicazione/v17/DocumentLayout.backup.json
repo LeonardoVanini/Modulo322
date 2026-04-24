@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\myroutinenew.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\myroutinenew.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|e:\\i2bd\\git\\progetto\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainCS.cs",
               "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
               "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
               "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-24T12:36:19.356Z",
               "EditorCaption": ""
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml.cs",
               "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
               "RelativeToolTip": "MyRoutineNew\\MainPage.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-24T12:08:21.879Z",
               "EditorCaption": ""
@@ -80,18 +80,17 @@
               "RelativeToolTip": "MyRoutineNew\\MainPage.xaml",
               "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T12:08:11.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T12:08:11.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MyRoutineNew.csproj",
               "DocumentMoniker": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
               "RelativeDocumentMoniker": "MyRoutineNew\\MyRoutineNew.csproj",
-              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj",
-              "RelativeToolTip": "MyRoutineNew\\MyRoutineNew.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\I2BD\\GIT\\progetto\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MyRoutineNew.csproj*",
+              "RelativeToolTip": "MyRoutineNew\\MyRoutineNew.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-04-24T11:26:03.725Z",
               "EditorCaption": ""
@@ -106,8 +105,7 @@
               "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:25:11.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:25:11.802Z"
             },
             {
               "$type": "Document",
@@ -119,8 +117,7 @@
               "RelativeToolTip": "MyRoutineNew\\Routine.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:24:18.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:24:18.379Z"
             },
             {
               "$type": "Document",
@@ -132,8 +129,7 @@
               "RelativeToolTip": "MyRoutineNew\\Impostazioni.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:23:59.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:23:59.277Z"
             },
             {
               "$type": "Document",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "MyRoutineNew\\Profilo.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T11:23:43.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:23:43.636Z"
             }
           ]
         }

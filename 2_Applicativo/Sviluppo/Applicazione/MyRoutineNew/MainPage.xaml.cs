@@ -22,37 +22,22 @@
         }
         private void test1(object sender, EventArgs e)
         {
-            PerImpostazioni();
+            MainCS.PerImpostazioni(Navigation);
         }
         private void test2(object sender, EventArgs e)
         {
-            PerProfilo();
+            MainCS.PerProfilo(Navigation);
         }
         private void test3(object sender, EventArgs e)
         {
-            PerRoutine();
+            MainCS.PerRoutine(Navigation);
         }
         private void test4(object sender, EventArgs e)
         {
-            PerStatistiche();
+            MainCS.PerStatistiche(Navigation);
         }
 
-        private async void PerImpostazioni()
-        {
-            await Navigation.PushAsync(new Impostazioni());
-        }
-        private async void PerProfilo()
-        {
-            await Navigation.PushAsync(new Profilo());
-        }
-        private async void PerRoutine()
-        {
-            await Navigation.PushAsync(new Routine());
-        }
-        private async void PerStatistiche()
-        {
-            await Navigation.PushAsync(new Statistiche());
-        }
+        
     }
 
 }
