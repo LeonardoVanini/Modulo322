@@ -42,7 +42,7 @@
             string ini = "";
             if (!string.IsNullOrEmpty(MainCS.Nome)) ini += MainCS.Nome[0];
             if (!string.IsNullOrEmpty(MainCS.Cognome)) ini += MainCS.Cognome[0];
-            LabelAvatarIni.Text = ini.Length > 0 ? ini.ToUpper() : "?";
+            LabelAvatarIni.Text = ini.Length > 0 ? ini.ToUpper() : "U?";
 
             // Progresso giornaliero – da aggiornare quando avremo la lista task
             // Per ora valori di esempio; sostituire con conteggio reale
