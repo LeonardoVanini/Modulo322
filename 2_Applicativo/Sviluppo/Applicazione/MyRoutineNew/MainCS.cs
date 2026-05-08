@@ -15,7 +15,9 @@ namespace MyRoutineNew
         private static DateTime _dataOra;
         private static string _tema;
         private static bool _task;
-        private static Attivita attivita;
+        private static Attivita _attivita;
+        private static int _attivitaOggi;
+        private static int _attivitaOggiCompletate;
 
 
         //implementazioni future
@@ -53,8 +55,19 @@ namespace MyRoutineNew
         }
         public static Attivita Attivita
         {
-            get { return attivita; }
-            set { attivita = value; }
+            get { return _attivita; }
+            set { _attivita = value; }
+        }
+
+        public static int AttivitaOggi
+        {
+            get { return _attivitaOggi; }
+            set { _attivitaOggi = value; }
+        }
+        public static int AttivitaOggiCompletate
+        {
+            get { return _attivitaOggiCompletate; }
+            set { _attivitaOggiCompletate = value; }
         }
 
         //metodi di navigazione
