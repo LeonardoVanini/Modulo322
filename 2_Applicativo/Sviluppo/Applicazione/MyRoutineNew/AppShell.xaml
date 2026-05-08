@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    AppShell.xaml
+    Shell a 5 tab con bottom TabBar.
+    Sostituisce la navigazione PushAsync di MainCS per le 5 schermate principali.
+    I tab usano icone vettoriali: aggiungere i file SVG/PNG in Resources/Images
+    con i nomi indicati nelle proprietà Icon.
+-->
 <Shell
     x:Class="MyRoutineNew.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MyRoutineNew"
     Shell.FlyoutBehavior="Disabled"
-    Title="MyRoutineNew">
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarBackgroundColor="{StaticResource NavBg}"
+    Shell.TabBarForegroundColor="{StaticResource Accent}"
+    Shell.TabBarTitleColor="{StaticResource Accent}"
+    Shell.TabBarUnselectedColor="{StaticResource NavUnselected}"
+    Title="MyRoutine">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+
+        <!-- ── Home ── -->
+        <Tab Title="Home" Icon="tab_home.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+
+        <!-- ── Agenda (Routine) ── -->
+        <Tab Title="Agenda" Icon="tab_agenda.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Routine}"
+                Route="Routine" />
+        </Tab>
+
+        <!-- ── Statistiche ── -->
+        <Tab Title="Stats" Icon="tab_stats.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Statistiche}"
+                Route="Statistiche" />
+        </Tab>
+
+        <!-- ── Profilo ── -->
+        <Tab Title="Profilo" Icon="tab_profile.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Profilo}"
+                Route="Profilo" />
+        </Tab>
+
+        <!-- ── Impostazioni ── -->
+        <Tab Title="Config" Icon="tab_settings.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:Impostazioni}"
+                Route="Impostazioni" />
+        </Tab>
+
+    </TabBar>
 
 </Shell>
