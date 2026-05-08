@@ -16,6 +16,7 @@ namespace MyRoutineNew
         private static string _tema;
         private static bool _task;
         private static Attivita _attivita;
+        private static List<Attivita> _attivitaInsieme = new List<Attivita>();
         private static int _attivitaOggi;
         private static int _attivitaOggiCompletate;
 
@@ -24,6 +25,32 @@ namespace MyRoutineNew
         //
         //giorno della settimana
         //ora del giorno
+
+        //metodi per insieme attività
+        public static void AddAttivita(Attivita newAttivita)
+        {
+            _attivitaInsieme.Add(newAttivita);
+        }
+
+        public static void RemoveAttivita(Attivita newAttivita)
+        {
+            _attivitaInsieme.Remove(newAttivita);
+        }
+
+        public static void UpdateAttivita(Attivita newAttivita)
+        {
+            _attivitaInsieme.Find(currentAttivita => currentAttivita.DateTimeInizio == newAttivita.DateTimeInizio);            
+        }
+
+        public static List<Attivita> GetAllAttivita()
+        {
+            return _attivitaInsieme;
+        }
+
+        public static Attivita GetAttivita(int index)
+        {
+            return _attivitaInsieme.ElementAt(index);
+        }
 
 
 

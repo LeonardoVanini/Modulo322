@@ -84,7 +84,10 @@ public partial class Routine : ContentPage
         };
 
         // Per ora salva l'ultima attività creata in MainCS
-        MainCS.Attivita = nuova;
+        //MainCS.Attivita = nuova;
+        //Aggiornato
+
+        MainCS.AddAttivita(nuova);
 
         await DisplayAlert("Task aggiunta", $"'{nome}' aggiunta con successo.", "OK");
     }

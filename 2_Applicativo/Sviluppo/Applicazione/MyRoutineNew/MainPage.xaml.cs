@@ -46,8 +46,8 @@
 
             // Progresso giornaliero – da aggiornare quando avremo la lista task
             // Per ora valori di esempio; sostituire con conteggio reale
-            int completate = 2;
-            int totali = 5;
+            int completate = MainCS.AttivitaOggiCompletate;
+            int totali = MainCS.AttivitaOggi;
             ProgressOggi.Progress = totali > 0 ? (double)completate / totali : 0;
             LabelProgressTesto.Text = $"{completate} / {totali}";
 
