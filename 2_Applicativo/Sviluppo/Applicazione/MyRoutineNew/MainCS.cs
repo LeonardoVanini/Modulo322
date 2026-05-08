@@ -1,4 +1,5 @@
-﻿using MyRoutineNew.Models;
+﻿using MyRoutine.Models;
+using MyRoutineNew.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,21 @@ namespace MyRoutineNew
         private static int _attivitaOggi;
         private static int _attivitaOggiCompletate;
 
+        private static List<Badge> _badgeInsieme = new List<Badge>();
+
+        private static int _attivitaMese;        
+        private static int _attivitaMeseCompletate;
+        private static int _attivitaMesePrecedente;
+        private static int _attivitaMeseCompletatePrecedente;     
+
+        private static int _streak;//almeno un attivita al giorno
+        private static int _recordStreak;        
+        
+        private static int _badgeGuadagnati;
+        private static int _badgeMancanti;
+
+        
+        
 
         //implementazioni future
         //
@@ -51,8 +67,63 @@ namespace MyRoutineNew
         {
             return _attivitaInsieme.ElementAt(index);
         }
+        //metodi per insieme badge
+        public static void AddBadge(Badge newBadge)
+        {
+            _badgeInsieme.Add(newBadge);
+        }
 
+        public static void RemoveBadge(Badge newBadge)
+        {
+            _badgeInsieme.Remove(newBadge);
+        }
 
+        public static void UpdateBadge(Badge newBadge)
+        {
+            _badgeInsieme.Find(currentBadge => currentBadge.Nome == newBadge.Nome);
+        }
+
+        public static List<Badge> GetAllBadge()
+        {
+            return _badgeInsieme;
+        }
+
+        public static Badge GetBadge(int index)
+        {
+            return _badgeInsieme.ElementAt(index);
+        }
+        //metodi per badge counter
+        public static int BadgeGuadagnati()
+        {
+            int count = 0;
+            foreach (Badge currentBadge in _badgeInsieme)
+            {
+                if (currentBadge.Ottenuto)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int BadgeMancanti()
+        {
+            return _badgeInsieme.Count - BadgeGuadagnati();
+        }
+        //metodi per statistiche
+        public static int DeltaMese()
+        {
+            return _attivitaMeseCompletate - _attivitaMeseCompletatePrecedente;
+        }
+
+        public static int CompletamentoPct()
+        {
+            return (_attivitaMeseCompletate / _attivitaMese) * 100;
+        }
+        public static int DeltaCompletamento()
+        {
+            return CompletamentoPct() - (_attivitaMeseCompletatePrecedente / _attivitaMesePrecedente) * 100;
+        }
 
         //metodi getter/setter
         public static string Nome
@@ -85,7 +156,6 @@ namespace MyRoutineNew
             get { return _attivita; }
             set { _attivita = value; }
         }
-
         public static int AttivitaOggi
         {
             get { return _attivitaOggi; }
@@ -95,6 +165,36 @@ namespace MyRoutineNew
         {
             get { return _attivitaOggiCompletate; }
             set { _attivitaOggiCompletate = value; }
+        }
+        public static int AttivitaMese
+        {
+            get { return _attivitaMese; }
+            set { _attivitaMese = value; }
+        }
+        public static int AttivitaMesePrecedente
+        {
+            get { return _attivitaMesePrecedente; }
+            set { _attivitaMesePrecedente = value; }
+        }
+        public static int AttivitaMeseCompletate
+        {
+            get { return _attivitaMeseCompletate; }
+            set { _attivitaMeseCompletate = value; }
+        }
+        public static int AttivitaMeseCompletatePrecedente
+        {
+            get { return _attivitaMeseCompletatePrecedente; }
+            set { _attivitaMeseCompletatePrecedente = value; }
+        }
+        public static int Streak
+        {
+            get { return _streak; }
+            set { _streak = value; }
+        }
+        public static int RecordStreak
+        {
+            get { return _recordStreak; }
+            set { _recordStreak = value; }
         }
 
         //metodi di navigazione
