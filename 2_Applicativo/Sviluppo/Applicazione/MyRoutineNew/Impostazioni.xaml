@@ -1,281 +1,176 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--
-    Impostazioni.xaml  –  Schermata Impostazioni
-
-    Proprietà C# usate:
-      MainCS.Tema   → valore letto/scritto quando l'utente cambia tema
-                      (impostare da code-behind: MainCS.Tema = "Soleil")
-
-    Ogni Switch ha un x:Name e un handler Toggled nel code-behind.
-    Le righe con TapGestureRecognizer rimandano a DisplayActionSheet o
-    DisplayPrompt per selezionare lingua e orario inizio giornata.
--->
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyRoutineNew.Impostazioni"
-    BackgroundColor="{StaticResource BgPage}">
+    BackgroundColor="#FDF7F0">
 
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- ════════════════════════════════
-                 HEADER
-            ════════════════════════════════ -->
-            <Label
-                Padding="20,48,20,20"
-                Text="Impostazioni"
-                FontSize="22"
-                FontAttributes="Bold"
-                TextColor="{StaticResource TextPrimary}"/>
+            <Label Padding="20,48,20,20" Text="Impostazioni"
+                   FontSize="22" FontAttributes="Bold" TextColor="#1C1409"/>
 
-            <!-- ════════════════════════════════
-                 SEZIONE: NOTIFICHE
-            ════════════════════════════════ -->
-            <Label
-                Margin="20,0,20,8"
-                Text="NOTIFICHE"
-                FontSize="10"
-                FontAttributes="Bold"
-                CharacterSpacing="1.5"
-                TextColor="{StaticResource TextSecondary}"/>
+            <!-- ── NOTIFICHE ── -->
+            <Label Margin="20,0,20,8" Text="NOTIFICHE"
+                   FontSize="10" FontAttributes="Bold"
+                   CharacterSpacing="1.5" TextColor="#7A6850"/>
 
-            <Border
-                Margin="16,0,16,20"
-                BackgroundColor="{StaticResource BgCard}"
-                Stroke="{StaticResource BorderBrush}"
-                StrokeThickness="1">
+            <Border Margin="16,0,16,20" BackgroundColor="White"
+                    Stroke="#E8E0D4" StrokeThickness="1">
                 <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
                 <VerticalStackLayout>
 
-                    <!-- Riga: promemoria task -->
-                    <Grid
-                        Padding="16,14"
-                        ColumnDefinitions="36,*,Auto"
-                        ColumnSpacing="12">
-                        <Border
-                            Grid.Column="0"
-                            WidthRequest="32"
-                            HeightRequest="32"
-                            BackgroundColor="{StaticResource BgMuted}"
-                            StrokeThickness="0"
-                            VerticalOptions="Center">
+                    <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
+                        <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                                BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                             <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                             <Label Text="🔔" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
-                            <Label Text="Promemoria task" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
-                            <Label Text="Notifica 15 min prima" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                            <Label Text="Promemoria task" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                            <Label Text="Notifica 15 min prima" FontSize="10" TextColor="#7A6850"/>
                         </VerticalStackLayout>
-                        <!-- code-behind: SwitchPromemoria.IsToggled -->
-                        <Switch
-                            x:Name="SwitchPromemoria"
-                            Grid.Column="2"
-                            IsToggled="True"
-                            OnColor="{StaticResource Accent}"
-                            ThumbColor="White"
-                            Toggled="OnSwitchPromemoriaToggled"
-                            VerticalOptions="Center"/>
+                        <Switch x:Name="SwitchPromemoria" Grid.Column="2"
+                                IsToggled="True" OnColor="#F97316" ThumbColor="White"
+                                Toggled="OnSwitchPromemoriaToggled" VerticalOptions="Center"/>
                     </Grid>
 
-                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="{StaticResource BorderColor}"/>
+                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="#E8E0D4"/>
 
-                    <!-- Riga: badge sbloccati -->
-                    <Grid
-                        Padding="16,14"
-                        ColumnDefinitions="36,*,Auto"
-                        ColumnSpacing="12">
-                        <Border
-                            Grid.Column="0"
-                            WidthRequest="32"
-                            HeightRequest="32"
-                            BackgroundColor="{StaticResource BgMuted}"
-                            StrokeThickness="0"
-                            VerticalOptions="Center">
+                    <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
+                        <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                                BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                             <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                             <Label Text="🏆" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
-                            <Label Text="Badge sbloccati" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
-                            <Label Text="Avvisi nuovi badge" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                            <Label Text="Badge sbloccati" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                            <Label Text="Avvisi nuovi badge" FontSize="10" TextColor="#7A6850"/>
                         </VerticalStackLayout>
-                        <Switch
-                            x:Name="SwitchBadge"
-                            Grid.Column="2"
-                            IsToggled="True"
-                            OnColor="{StaticResource Accent}"
-                            ThumbColor="White"
-                            Toggled="OnSwitchBadgeToggled"
-                            VerticalOptions="Center"/>
+                        <Switch x:Name="SwitchBadge" Grid.Column="2"
+                                IsToggled="True" OnColor="#F97316" ThumbColor="White"
+                                Toggled="OnSwitchBadgeToggled" VerticalOptions="Center"/>
                     </Grid>
 
-                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="{StaticResource BorderColor}"/>
+                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="#E8E0D4"/>
 
-                    <!-- Riga: report settimanale -->
-                    <Grid
-                        Padding="16,14"
-                        ColumnDefinitions="36,*,Auto"
-                        ColumnSpacing="12">
-                        <Border
-                            Grid.Column="0"
-                            WidthRequest="32"
-                            HeightRequest="32"
-                            BackgroundColor="{StaticResource BgMuted}"
-                            StrokeThickness="0"
-                            VerticalOptions="Center">
+                    <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
+                        <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                                BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                             <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                             <Label Text="📊" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
-                            <Label Text="Report settimanale" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
-                            <Label Text="Riepilogo ogni domenica" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                            <Label Text="Report settimanale" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                            <Label Text="Riepilogo ogni domenica" FontSize="10" TextColor="#7A6850"/>
                         </VerticalStackLayout>
-                        <Switch
-                            x:Name="SwitchReport"
-                            Grid.Column="2"
-                            IsToggled="False"
-                            OnColor="{StaticResource Accent}"
-                            ThumbColor="White"
-                            Toggled="OnSwitchReportToggled"
-                            VerticalOptions="Center"/>
+                        <Switch x:Name="SwitchReport" Grid.Column="2"
+                                IsToggled="False" OnColor="#F97316" ThumbColor="White"
+                                Toggled="OnSwitchReportToggled" VerticalOptions="Center"/>
                     </Grid>
 
                 </VerticalStackLayout>
             </Border>
 
-            <!-- ════════════════════════════════
-                 SEZIONE: PREFERENZE
-            ════════════════════════════════ -->
-            <Label
-                Margin="20,0,20,8"
-                Text="PREFERENZE"
-                FontSize="10"
-                FontAttributes="Bold"
-                CharacterSpacing="1.5"
-                TextColor="{StaticResource TextSecondary}"/>
+            <!-- ── PREFERENZE ── -->
+            <Label Margin="20,0,20,8" Text="PREFERENZE"
+                   FontSize="10" FontAttributes="Bold"
+                   CharacterSpacing="1.5" TextColor="#7A6850"/>
 
-            <Border
-                Margin="16,0,16,20"
-                BackgroundColor="{StaticResource BgCard}"
-                Stroke="{StaticResource BorderBrush}"
-                StrokeThickness="1">
+            <Border Margin="16,0,16,20" BackgroundColor="White"
+                    Stroke="#E8E0D4" StrokeThickness="1">
                 <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
                 <VerticalStackLayout>
-
-                    <!-- Lingua -->
-                    <Grid
-                        Padding="16,14"
-                        ColumnDefinitions="36,*,Auto"
-                        ColumnSpacing="12">
+                    <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnLinguaTapped"/>
                         </Grid.GestureRecognizers>
-                        <Border
-                            Grid.Column="0"
-                            WidthRequest="32"
-                            HeightRequest="32"
-                            BackgroundColor="{StaticResource BgMuted}"
-                            StrokeThickness="0"
-                            VerticalOptions="Center">
+                        <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                                BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                             <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                             <Label Text="🌍" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
-                            <Label Text="Lingua" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
-                            <Label x:Name="LabelLinguaValore" Text="Italiano" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                            <Label Text="Lingua" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                            <Label x:Name="LabelLinguaValore" Text="Italiano" FontSize="10" TextColor="#7A6850"/>
                         </VerticalStackLayout>
-                        <Label
-                            Grid.Column="2"
-                            Text="›"
-                            FontSize="18"
-                            TextColor="{StaticResource TextMuted}"
-                            VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="›" FontSize="18" TextColor="#B8A88A" VerticalOptions="Center"/>
                     </Grid>
 
-                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="{StaticResource BorderColor}"/>
+                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="#E8E0D4"/>
 
-                    <!-- Inizio giornata -->
-                    <Grid
-                        Padding="16,14"
-                        ColumnDefinitions="36,*,Auto"
-                        ColumnSpacing="12">
+                    <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnInizioGiornataTapped"/>
                         </Grid.GestureRecognizers>
-                        <Border
-                            Grid.Column="0"
-                            WidthRequest="32"
-                            HeightRequest="32"
-                            BackgroundColor="{StaticResource BgMuted}"
-                            StrokeThickness="0"
-                            VerticalOptions="Center">
+                        <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                                BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                             <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                             <Label Text="⏰" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
-                            <Label Text="Inizio giornata" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
-                            <Label x:Name="LabelInizioGiornata" Text="06:00" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                            <Label Text="Inizio giornata" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                            <Label x:Name="LabelInizioGiornata" Text="06:00" FontSize="10" TextColor="#7A6850"/>
                         </VerticalStackLayout>
-                        <Label
-                            Grid.Column="2"
-                            Text="›"
-                            FontSize="18"
-                            TextColor="{StaticResource TextMuted}"
-                            VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="›" FontSize="18" TextColor="#B8A88A" VerticalOptions="Center"/>
                     </Grid>
-
                 </VerticalStackLayout>
             </Border>
 
-            <!-- ════════════════════════════════
-                 SEZIONE: ACCOUNT
-            ════════════════════════════════ -->
-            <Label
-                Margin="20,0,20,8"
-                Text="ACCOUNT"
-                FontSize="10"
-                FontAttributes="Bold"
-                CharacterSpacing="1.5"
-                TextColor="{StaticResource TextSecondary}"/>
+            <!-- ══════════════════════════════════
+                 DATI PERSONALI – Riconfigura
+            ══════════════════════════════════ -->
+            <Label Margin="20,0,20,8" Text="DATI PERSONALI"
+                   FontSize="10" FontAttributes="Bold"
+                   CharacterSpacing="1.5" TextColor="#7A6850"/>
 
-            <Border
-                Margin="16,0,16,20"
-                BackgroundColor="{StaticResource BgCard}"
-                Stroke="{StaticResource BorderBrush}"
-                StrokeThickness="1">
+            <Border Margin="16,0,16,20" BackgroundColor="White"
+                    Stroke="#E8E0D4" StrokeThickness="1">
                 <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
+                <Grid Padding="16,14" ColumnDefinitions="36,*,Auto" ColumnSpacing="12">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnRiconfiguraTapped"/>
+                    </Grid.GestureRecognizers>
+                    <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                            BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
+                        <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
+                        <Label Text="✏️" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="1">
+                        <Label Text="Riconfigura i miei dati"
+                               FontSize="13" FontAttributes="Bold" TextColor="#F97316"/>
+                        <Label Text="Ripeti la configurazione iniziale"
+                               FontSize="10" TextColor="#7A6850"/>
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="18" TextColor="#B8A88A" VerticalOptions="Center"/>
+                </Grid>
+            </Border>
 
-                <!-- Esci -->
-                <Grid
-                    Padding="16,14"
-                    ColumnDefinitions="36,*"
-                    ColumnSpacing="12">
+            <!-- ── ACCOUNT ── -->
+            <Label Margin="20,0,20,8" Text="ACCOUNT"
+                   FontSize="10" FontAttributes="Bold"
+                   CharacterSpacing="1.5" TextColor="#7A6850"/>
+
+            <Border Margin="16,0,16,20" BackgroundColor="White"
+                    Stroke="#E8E0D4" StrokeThickness="1">
+                <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
+                <Grid Padding="16,14" ColumnDefinitions="36,*" ColumnSpacing="12">
                     <Grid.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnEsciTapped"/>
                     </Grid.GestureRecognizers>
-                    <Border
-                        Grid.Column="0"
-                        WidthRequest="32"
-                        HeightRequest="32"
-                        BackgroundColor="{StaticResource BgMuted}"
-                        StrokeThickness="0"
-                        VerticalOptions="Center">
+                    <Border Grid.Column="0" WidthRequest="32" HeightRequest="32"
+                            BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
                         <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
                         <Label Text="🚪" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"/>
                     </Border>
-                    <Label
-                        Grid.Column="1"
-                        Text="Esci"
-                        FontSize="13"
-                        FontAttributes="Bold"
-                        TextColor="{StaticResource AccentRed}"
-                        VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Esci"
+                           FontSize="13" FontAttributes="Bold"
+                           TextColor="#F43F5E" VerticalOptions="Center"/>
                 </Grid>
-
             </Border>
 
             <BoxView HeightRequest="20" Color="Transparent"/>
-
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace MyRoutineNew.Models
 {
@@ -14,6 +10,7 @@ namespace MyRoutineNew.Models
         private DateTime _dateTimeFine;
         private string _categoria;
 
+        // ── Proprietà esistenti (invariate) ─────────────────
         public string Nome
         {
             get { return _nome; }
@@ -40,5 +37,15 @@ namespace MyRoutineNew.Models
             set { _categoria = value; }
         }
 
+        // ── Nuove proprietà aggiunte ─────────────────────────
+        public string Id          { get; set; }
+        public bool   Completata  { get; set; }
+
+        // Costruttore senza parametri (necessario per JSON)
+        public Attivita()
+        {
+            Id         = Guid.NewGuid().ToString();
+            Completata = false;
+        }
     }
 }

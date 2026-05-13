@@ -144,7 +144,7 @@
                         <Label
                             x:Name="LabelStatStreak"
                             Text="12🔥"
-                            FontSize="25"
+                            FontSize="20"
                             FontAttributes="Bold"
                             TextColor="{StaticResource Accent}"
                             HorizontalTextAlignment="Center"/>
@@ -228,7 +228,7 @@
                                 <!-- Emoji/icona badge -->
                                 <Label
                                     Text="{Binding Nome}"
-                                    FontSize="13"
+                                    FontSize="8"
                                     FontAttributes="Bold"
                                     HorizontalTextAlignment="Center"
                                     TextColor="White"
