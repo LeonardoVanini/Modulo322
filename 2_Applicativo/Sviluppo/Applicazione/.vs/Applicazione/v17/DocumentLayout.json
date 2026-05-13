@@ -74,11 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainCS.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:18:11.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,19 +104,6 @@
               "ViewState": "AgIAADcAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-08T12:05:06.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainCS.cs",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
-              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
-              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T12:18:11.471Z",
               "EditorCaption": ""
             },
             {
