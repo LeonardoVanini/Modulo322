@@ -32,6 +32,35 @@
         public MainPage()
         {
             InitializeComponent();
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+            // Saluto con nome da MainCS (se già impostato)
+            string nome = MainCS.Nome ?? "Utente";
+            string cognome = MainCS.Cognome ?? "";
+            LabelBenvenuto.Text = $"{nome} {cognome}".Trim();
+
+            // Iniziali avatar (max 2 caratteri)
+            string ini = "";
+            if (!string.IsNullOrEmpty(MainCS.Nome)) ini += MainCS.Nome[0];
+            if (!string.IsNullOrEmpty(MainCS.Cognome)) ini += MainCS.Cognome[0];
+            LabelAvatarIni.Text = ini.Length > 0 ? ini.ToUpper() : "U?";
+
+            // Progresso giornaliero – da aggiornare quando avremo la lista task
+            // Per ora valori di esempio; sostituire con conteggio reale
+            int completate = MainCS.AttivitaOggiCompletate;
+            int totali = MainCS.AttivitaOggi;
+            ProgressOggi.Progress = totali > 0 ? (double)completate / totali : 0;
+            LabelProgressTesto.Text = $"{completate} / {totali}";
+
+            // Task di esempio – da sostituire con dati reali da lista Attivita
+            // quando il compagno avrà implementato la collezione
+            AggiornaTasks();
+>>>>>>> 36e872494541a598e1772546e2aa5a57ace06bd3
+        }
+=======
+>>>>>>> parent of e588e68 (banana hihihihi)
 
             // Saluto con nome da MainCS (se già impostato)
             string nome = MainCS.Nome ?? "Utente";

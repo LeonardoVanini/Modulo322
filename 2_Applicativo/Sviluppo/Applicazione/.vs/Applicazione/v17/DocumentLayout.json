@@ -54,6 +54,17 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "OnboardingData.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "RelativeToolTip": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T12:27:09.801Z",
+=======
               "DocumentIndex": 1,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
@@ -63,6 +74,7 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAuwEoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T11:51:00.156Z",
+>>>>>>> parent of e588e68 (banana hihihihi)
               "EditorCaption": ""
             },
             {
@@ -75,12 +87,127 @@
               "RelativeToolTip": "MyRoutineNew\\Profilo.xaml",
               "ViewState": "AgIAAIEAAAAAAAAAAAAAAJIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+<<<<<<< HEAD
+              "WhenOpened": "2026-05-08T11:50:05.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Statistiche.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Statistiche.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:43:36.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainCS.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:18:11.471Z"
+=======
               "WhenOpened": "2026-05-08T11:50:05.908Z",
               "EditorCaption": ""
+>>>>>>> parent of e588e68 (banana hihihihi)
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:33:58.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Routine.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Routine.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\Routine.xaml.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAvwBUBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:43:24.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AboutAssets.txt",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
+              "RelativeToolTip": "MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-08T12:04:36.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\App.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\App.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:04:44.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MauiProgram.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MauiProgram.cs",
+              "RelativeToolTip": "MyRoutineNew\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:04:47.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAMwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-08T12:05:06.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\AppShell.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\AppShell.xaml",
+              "RelativeToolTip": "MyRoutineNew\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-08T12:41:56.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+=======
+>>>>>>> parent of e588e68 (banana hihihihi)
               "Title": "Impostazioni.xaml.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\Impostazioni.xaml.cs",
@@ -88,8 +215,7 @@
               "RelativeToolTip": "MyRoutineNew\\Impostazioni.xaml.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAewDQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:43:48.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T11:43:48.418Z"
             },
             {
               "$type": "Document",

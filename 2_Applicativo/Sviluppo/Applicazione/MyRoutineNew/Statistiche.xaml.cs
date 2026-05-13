@@ -16,10 +16,10 @@ public partial class Statistiche : ContentPage
 
         // Valori di esempio – sostituire con calcoli reali sulla lista Attivita
         // quando il compagno avrà implementato il repository dati
-        AggiornaStat(taskMese: 38, deltaMese: +12,
-                     streak: 12, recordStreak: 21,
-                     completamentoPct: 84, deltaComp: +6,
-                     badgeGuadagnati: 7, badgeMancanti: 5);
+        AggiornaStat(taskMese: MainCS.AttivitaMeseCompletate, deltaMese: MainCS.DeltaMese(),
+                     streak: MainCS.Streak, recordStreak: MainCS.RecordStreak,
+                     completamentoPct: MainCS.CompletamentoPct(), deltaComp: MainCS.DeltaCompletamento(),
+                     badgeGuadagnati: MainCS.BadgeGuadagnati(), badgeMancanti: MainCS.BadgeMancanti());
     }
 
     // Aggiorna tutti i label delle statistiche in un colpo solo.
