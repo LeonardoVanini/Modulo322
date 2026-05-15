@@ -9,6 +9,7 @@ namespace MyRoutineNew.Models
         private DateTime _dateTimeInizio;
         private DateTime _dateTimeFine;
         private string _categoria;
+        private bool _completata;
 
         // ── Proprietà esistenti (invariate) ─────────────────
         public string Nome
@@ -36,6 +37,12 @@ namespace MyRoutineNew.Models
             get { return _categoria; }
             set { _categoria = value; }
         }
+        public bool Completata
+        {
+            get { return _completata; }
+            set { _completata = value; }
+        }
+
 
         // ── Nuove proprietà aggiunte ─────────────────────────
         public string Id          { get; set; }
