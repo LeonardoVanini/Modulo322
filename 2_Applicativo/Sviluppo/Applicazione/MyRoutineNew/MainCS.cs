@@ -20,6 +20,25 @@ namespace MyRoutineNew
         // ── Nuova variabile: data di nascita ────────────────
         private static DateTime _dataNascita;
 
+<<<<<<< Updated upstream
+=======
+        private static ImpostazioniClasse _impostazioni;
+
+        private static int _attivitaMese;        
+        private static int _attivitaMeseCompletate;
+        private static int _attivitaMesePrecedente;
+        private static int _attivitaMeseCompletatePrecedente;     
+
+
+        //da implementare
+        private static int _streak;//almeno un attivita al giorno
+        private static int _recordStreak;        
+        
+        
+
+        
+        
+>>>>>>> Stashed changes
 
         //implementazioni future
         //
@@ -27,7 +46,118 @@ namespace MyRoutineNew
         //ora del giorno
 
 
+<<<<<<< Updated upstream
         // ── Getter/Setter esistenti (invariati) ─────────────
+=======
+        public static void RemoveAttivita(Attivita newAttivita)
+        {
+            _attivitaInsieme.Remove(newAttivita);
+        }
+
+        public static void UpdateAttivita(Attivita newAttivita)
+        {
+            try
+            {
+                Attivita oldAttivita = _attivitaInsieme.Find(currentAttivita => currentAttivita.DateTimeInizio == newAttivita.DateTimeInizio);
+                RemoveAttivita(oldAttivita);
+                AddAttivita(newAttivita);
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        public static List<Attivita> GetAllAttivita()
+        {
+            return _attivitaInsieme;
+        }
+
+        public static Attivita GetAttivita(int index)
+        {
+            return _attivitaInsieme.ElementAt(index);
+        }
+        //metodi per insieme badge
+        public static void AddBadge(Badge newBadge)
+        {
+            _badgeInsieme.Add(newBadge);
+        }
+
+        public static void RemoveBadge(Badge newBadge)
+        {
+            _badgeInsieme.Remove(newBadge);
+        }
+
+        public static void UpdateBadge(Badge newBadge)
+        {
+            try
+            {
+                Badge oldBadge = _badgeInsieme.Find(currentBadge => currentBadge.Nome == newBadge.Nome);
+                RemoveBadge(oldBadge);
+                AddBadge(newBadge);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        public static List<Badge> GetAllBadge()
+        {
+            return _badgeInsieme;
+        }
+
+        public static Badge GetBadge(int index)
+        {
+            return _badgeInsieme.ElementAt(index);
+        }
+        //metodi per badge counter
+        public static int BadgeGuadagnati()
+        {
+            return _badgeInsieme.Where(x => x.Ottenuto).Count();
+        }
+
+        public static int BadgeMancanti()
+        {
+            return _badgeInsieme.Count - BadgeGuadagnati();
+        }
+        //metodi per statistiche
+        public static int DeltaMese()
+        {
+            return _attivitaMeseCompletate - _attivitaMeseCompletatePrecedente;
+        }
+
+        public static int CompletamentoPct()
+        {
+            try
+            {
+                return (_attivitaMeseCompletate / _attivitaMese) * 100;
+            }catch  (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 0;
+            }
+        }
+        public static int DeltaCompletamento()
+        {
+            try
+            {
+                return CompletamentoPct() - (_attivitaMeseCompletatePrecedente / _attivitaMesePrecedente) * 100;
+            }catch  (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 0;
+            }
+        }
+
+        public static int TotaleAttivitaCompletate()
+        {
+            return _attivitaInsieme.Where(x => x.Completata).Count();
+        }
+        
+
+        //metodi getter/setter
+>>>>>>> Stashed changes
         public static string Nome
         {
             get { return _nome; }
@@ -57,6 +187,11 @@ namespace MyRoutineNew
         {
             get { return attivita; }
             set { attivita = value; }
+        }
+        public static ImpostazioniClasse Impostazioni
+        {
+            get { return _impostazioni; }
+            set { _impostazioni = value; }
         }
 
         // ── Nuovo getter/setter: data di nascita ────────────
