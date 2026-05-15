@@ -2,6 +2,7 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:Class="MyRoutineNew.Onboarding.OnboardingData"
     BackgroundColor="#FDF7F0"
     Shell.NavBarIsVisible="False">
@@ -42,7 +43,7 @@
             </VerticalStackLayout>
 
             <!-- DatePicker -->
-            <VerticalStackLayout Spacing="8">
+            <VerticalStackLayout Spacing="8"><!--è un po' scomodo trovare anno esatto se non vicino al 2008, es 1992, quindi dovremo rivedere-->
                 <Label Text="DATA DI NASCITA"
                        FontSize="11" FontAttributes="Bold"
                        CharacterSpacing="1.5"
@@ -60,7 +61,7 @@
                         TextColor="#1C1409"
                         HeightRequest="52"
                         BackgroundColor="Transparent"
-                        xmlns:sys="clr-namespace:System;assembly=mscorlib"/>
+                        />
                 </Border>
             </VerticalStackLayout>
 

@@ -1,3 +1,4 @@
+using MyRoutine.Models;
 using MyRoutineNew.Models;
 using System;
 using System.Collections.Generic;
@@ -16,12 +17,14 @@ namespace MyRoutineNew
         private static string _tema;
         private static bool _task;
         private static Attivita attivita;
+        private static List<Attivita> _attivitaInsieme = new List<Attivita>();
+        private static int _attivitaOggi;
+        private static int _attivitaOggiCompletate;
 
-        // ── Nuova variabile: data di nascita ────────────────
-        private static DateTime _dataNascita;
+        private static List<Badge> _badgeInsieme = new List<Badge>();
+        
 
-<<<<<<< Updated upstream
-=======
+
         private static ImpostazioniClasse _impostazioni;
 
         private static int _attivitaMese;        
@@ -34,11 +37,12 @@ namespace MyRoutineNew
         private static int _streak;//almeno un attivita al giorno
         private static int _recordStreak;        
         
-        
+        // ── Nuova variabile: data di nascita ────────────────
+        private static DateTime _dataNascita;
 
-        
-        
->>>>>>> Stashed changes
+
+
+
 
         //implementazioni future
         //
@@ -46,9 +50,12 @@ namespace MyRoutineNew
         //ora del giorno
 
 
-<<<<<<< Updated upstream
+
         // ── Getter/Setter esistenti (invariati) ─────────────
-=======
+        public static void AddAttivita(Attivita newAttivita)
+        {
+            _attivitaInsieme.Add(newAttivita);
+        }
         public static void RemoveAttivita(Attivita newAttivita)
         {
             _attivitaInsieme.Remove(newAttivita);
@@ -157,7 +164,7 @@ namespace MyRoutineNew
         
 
         //metodi getter/setter
->>>>>>> Stashed changes
+
         public static string Nome
         {
             get { return _nome; }
@@ -187,6 +194,46 @@ namespace MyRoutineNew
         {
             get { return attivita; }
             set { attivita = value; }
+        }
+        public static int AttivitaOggi
+        {
+            get { return _attivitaOggi; }
+            set { _attivitaOggi = value; }
+        }
+        public static int AttivitaOggiCompletate
+        {
+            get { return _attivitaOggiCompletate; }
+            set { _attivitaOggiCompletate = value; }
+        }
+        public static int AttivitaMese
+        {
+            get { return _attivitaMese; }
+            set { _attivitaMese = value; }
+        }
+        public static int AttivitaMesePrecedente
+        {
+            get { return _attivitaMesePrecedente; }
+            set { _attivitaMesePrecedente = value; }
+        }
+        public static int AttivitaMeseCompletate
+        {
+            get { return _attivitaMeseCompletate; }
+            set { _attivitaMeseCompletate = value; }
+        }
+        public static int AttivitaMeseCompletatePrecedente
+        {
+            get { return _attivitaMeseCompletatePrecedente; }
+            set { _attivitaMeseCompletatePrecedente = value; }
+        }
+        public static int Streak
+        {
+            get { return _streak; }
+            set { _streak = value; }
+        }
+        public static int RecordStreak
+        {
+            get { return _recordStreak; }
+            set { _recordStreak = value; }
         }
         public static ImpostazioniClasse Impostazioni
         {

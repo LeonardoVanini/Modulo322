@@ -275,7 +275,7 @@ public partial class Routine : ContentPage
         if (string.IsNullOrWhiteSpace(nome)) return;
 
         // Step 2: Categoria
-        string categoria = await DisplayActionSheetAsync(
+        string categoria = await DisplayActionSheet(
             "Categoria", "Annulla", null,
             "Fitness", "Benessere", "Studio", "Lavoro", "Hobby", "Altro");
         if (string.IsNullOrEmpty(categoria) || categoria == "Annulla") categoria = "Altro";

@@ -46,7 +46,7 @@ namespace MyRoutineNew.Models
 
         // ── Nuove proprietà aggiunte ─────────────────────────
         public string Id          { get; set; }
-        public bool   Completata  { get; set; }
+        
 
         // Costruttore senza parametri (necessario per JSON)
         public Attivita()
