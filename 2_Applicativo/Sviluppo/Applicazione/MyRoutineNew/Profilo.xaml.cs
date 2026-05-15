@@ -23,30 +23,39 @@ public partial class Profilo : ContentPage
         if (!string.IsNullOrEmpty(MainCS.Cognome)) ini += MainCS.Cognome[0];
         LabelAvatarIni.Text = ini.Length > 0 ? ini.ToUpper() : "?";
 
+        
+
+
+        AddTestBadge();//serve per inizializzare la lista di badge, in futuro che li caricheremo da file non sarà necessario: Leonardo
+
+        LabelStatTask.Text =$"{MainCS.TotaleAttivitaCompletate()}";
+        LabelStatBadge.Text = $"{MainCS.BadgeGuadagnati()}";
+        LabelStatStreak.Text = $"{MainCS.Streak}";
+
         // Carica badge nella griglia (dati di esempio)
-        // Sostituire con sorgente reale quando disponibile
-        BadgeCollection.ItemsSource = GetBadge();
+        // Sostituire con sorgente reale quando disponibile || fatto
+        BadgeCollection.ItemsSource = MainCS.GetAllBadge();
     }
 
     // Restituisce la lista badge di esempio.
     // Quando il compagno implementerà il salvataggio, sostituire
     // con il caricamento dal repository/servizio dati.
-    private List<Badge> GetBadge()
+    
+    //questi badge, o comunque quelli che inseriremo, è meglio aggiungerli nella pagina inziale, quella che si apre una sola volta: Leonardo
+    private void AddTestBadge()
     {
-        return new List<Badge>
-        {
-            new Badge("🏆 Prima settimana",  "Completa 7 giorni di routine", ottenuto: true),
-            new Badge("🔥 Streak 7gg",       "7 giorni consecutivi",         ottenuto: true),
-            new Badge("💪 Fitness x10",      "10 attività fitness",           ottenuto: true),
-            new Badge("📚 Lettore",          "10 sessioni di lettura",        ottenuto: true),
-            new Badge("🌅 Mattiniero",       "Completa 5 task prima delle 8", ottenuto: true),
-            new Badge("⚡ 50 Task",          "50 task completate in totale",  ottenuto: true),
-            new Badge("🎯 Puntuale",         "10 task iniziate in orario",    ottenuto: true),
-            new Badge("🌙 Notturno",         "5 task dopo le 22:00",          ottenuto: false),
-            new Badge("🧘 Zen 30gg",         "30 giorni di meditazione",      ottenuto: false),
-            new Badge("🚀 100 Task",         "100 task completate",           ottenuto: false),
-            new Badge("👑 Campione",         "Tutti i badge sbloccati",       ottenuto: false),
-            new Badge("🌟 Perfetto",         "100% completamento per 7 giorni", ottenuto: false),
-        };
+        MainCS.AddBadge(new Badge("🏆 Prima settimana", "Completa 7 giorni di routine", ottenuto: true));
+        MainCS.AddBadge(new Badge("🔥 Streak 7gg",       "7 giorni consecutivi",         ottenuto: true));
+        MainCS.AddBadge(new Badge("💪 Fitness x10",      "10 attività fitness",           ottenuto: true));
+        MainCS.AddBadge(new Badge("📚 Lettore",          "10 sessioni di lettura",        ottenuto: true));
+        MainCS.AddBadge(new Badge("🌅 Mattiniero",       "Completa 5 task prima delle 8", ottenuto: true));
+        MainCS.AddBadge(new Badge("⚡ 50 Task",          "50 task completate in totale",  ottenuto: true));
+        MainCS.AddBadge(new Badge("🎯 Puntuale",         "10 task iniziate in orario",    ottenuto: true));
+        MainCS.AddBadge(new Badge("🌙 Notturno",         "5 task dopo le 22:00",          ottenuto: false));
+        MainCS.AddBadge(new Badge("🧘 Zen 30gg",         "30 giorni di meditazione",      ottenuto: false));
+        MainCS.AddBadge(new Badge("🚀 100 Task",         "100 task completate",           ottenuto: false));
+        MainCS.AddBadge(new Badge("👑 Campione",         "Tutti i badge sbloccati",       ottenuto: false));
+        MainCS.AddBadge(new Badge("🌟 Perfetto",         "100% completamento per 7 giorni", ottenuto: false));
+
     }
 }

@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
+=======
+﻿
+using MyRoutineNew.Models;
+
+>>>>>>> Stashed changes
 namespace MyRoutineNew;
 
 public partial class Impostazioni : ContentPage
@@ -5,10 +11,25 @@ public partial class Impostazioni : ContentPage
     // ── CODICE DEL COMPAGNO (invariato) ────────────────────
     // (nessun metodo esistente da preservare)
     // ───────────────────────────────────────────────────────
-
+    
     public Impostazioni()
     {
         InitializeComponent();
+<<<<<<< Updated upstream
+=======
+
+        MainCS.Impostazioni = new ImpostazioniClasse(false,true,false,"Italiano",new TimeOnly(6,5));// esempio, da inserire nella pagina del primo accesso
+
+        SwitchPromemoria.IsToggled = MainCS.Impostazioni.Promemoria;
+        SwitchBadge.IsToggled = MainCS.Impostazioni.Avvisi;
+        SwitchReport.IsToggled = MainCS.Impostazioni.Report;
+        LabelLinguaValore.Text = MainCS.Impostazioni.Lingua;
+        LabelInizioGiornata.Text =MainCS.Impostazioni.InizioGiornata.ToString("HH:mm");
+
+        // Carica valori salvati in MainCS (se già impostati) || fatto
+        // Lingua e orario inizio giornata non sono ancora in MainCS: || fatto
+        // aggiungere le proprietà quando il compagno implementerà il salvataggio 
+>>>>>>> Stashed changes
     }
 
     // ── Switch Notifiche ────────────────────────────────────
@@ -48,7 +69,11 @@ public partial class Impostazioni : ContentPage
 
     // ── Riconfigura dati (NUOVO) ────────────────────────────
 
+<<<<<<< Updated upstream
     private async void OnRiconfiguraTapped(object sender, TappedEventArgs e)
+=======
+    private async void OnEsciTapped(object sender, TappedEventArgs e)//più che esci si potrebbe mettere un reset no? perchè esci è legato a un account, reset ale informazioni. solo un cosiglio
+>>>>>>> Stashed changes
     {
         bool conferma = await DisplayAlert(
             "Riconfigura i miei dati",
