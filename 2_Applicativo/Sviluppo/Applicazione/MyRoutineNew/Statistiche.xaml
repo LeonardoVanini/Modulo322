@@ -12,7 +12,8 @@
       LabelTaskMese, LabelStreak, LabelCompletamento, LabelBadgeCount
       LabelMissionePct1, ProgressMissione1 …
 -->
-<ContentPage
+<local:BaseContentPage
+    xmlns:local="clr-namespace:MyRoutineNew"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyRoutineNew.Statistiche"
@@ -268,4 +269,4 @@
         </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage>
+</local:BaseContentPage>

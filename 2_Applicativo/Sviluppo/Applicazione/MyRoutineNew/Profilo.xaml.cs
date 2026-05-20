@@ -2,8 +2,9 @@
 
 namespace MyRoutineNew;
 
-public partial class Profilo : ContentPage
+public partial class Profilo : BaseContentPage
 {
+
     // ── CODICE DEL COMPAGNO (invariato) ────────────────────
     // (nessun metodo esistente da preservare)
     // ───────────────────────────────────────────────────────

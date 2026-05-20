@@ -2,6 +2,7 @@ namespace MyRoutineNew.Onboarding;
 
 public partial class OnboardingData : ContentPage
 {
+
     public OnboardingData()
     {
         InitializeComponent();
@@ -14,6 +15,6 @@ public partial class OnboardingData : ContentPage
     private async void OnAvantiClicked(object sender, EventArgs e)
     {
         MainCS.DataNascita = PickerData.Date;
-        await Navigation.PushAsync(new OnboardingFine());
+        await Navigation.PushAsync(new OnboardingFine(), true);
     }
 }

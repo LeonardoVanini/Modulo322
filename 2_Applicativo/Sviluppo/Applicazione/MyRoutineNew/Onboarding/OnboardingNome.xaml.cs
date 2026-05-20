@@ -2,6 +2,7 @@ namespace MyRoutineNew.Onboarding;
 
 public partial class OnboardingNome : ContentPage
 {
+
     public OnboardingNome()
     {
         InitializeComponent();
@@ -17,6 +18,6 @@ public partial class OnboardingNome : ContentPage
         }
 
         MainCS.Nome = EntryNome.Text.Trim();
-        await Navigation.PushAsync(new OnboardingCognome());
+        await Navigation.PushAsync(new OnboardingCognome(), true);
     }
 }

@@ -5,8 +5,9 @@ using MyRoutineNew.Models;
 
 namespace MyRoutineNew;
 
-public partial class Impostazioni : ContentPage
+public partial class Impostazioni : BaseContentPage
 {
+
     // ── CODICE DEL COMPAGNO (invariato) ────────────────────
     // (nessun metodo esistente da preservare)
     // ───────────────────────────────────────────────────────
@@ -65,7 +66,7 @@ public partial class Impostazioni : ContentPage
             LabelInizioGiornata.Text = ora;
     }
 
-    // ── Riconfigura dati (NUOVO) ────────────────────────────
+    // ── Riconfigura dati  ────────────────────────────
 
 
     private async void OnRiconfiguraTapped(object sender, TappedEventArgs e)
@@ -108,4 +109,5 @@ public partial class Impostazioni : ContentPage
         MainCS.Tema    = null;
         // Nota: i dati rimangono nelle Preferences, l'utente non deve rifare l'onboarding
     }
+
 }

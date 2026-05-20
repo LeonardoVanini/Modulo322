@@ -14,31 +14,31 @@
 
     <TabBar>
 
-        <Tab Title="Home" Icon="tab_home.png">
+        <Tab Title="🏠">
             <ShellContent
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>
 
-        <Tab Title="Agenda" Icon="tab_agenda.png">
+        <Tab Title="🗓️">
             <ShellContent
                 ContentTemplate="{DataTemplate local:Routine}"
                 Route="Routine" />
         </Tab>
 
-        <Tab Title="Stats" Icon="tab_stats.png">
+        <Tab Title="📊">
             <ShellContent
                 ContentTemplate="{DataTemplate local:Statistiche}"
                 Route="Statistiche" />
         </Tab>
 
-        <Tab Title="Profilo" Icon="tab_profile.png">
+        <Tab Title="👤">
             <ShellContent
                 ContentTemplate="{DataTemplate local:Profilo}"
                 Route="Profilo" />
         </Tab>
 
-        <Tab Title="Impostazioni" Icon="tab_settings.png">
+        <Tab Title="⚙️">
             <ShellContent
                 ContentTemplate="{DataTemplate local:Impostazioni}"
                 Route="Impostazioni" />

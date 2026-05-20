@@ -2,7 +2,7 @@ using MyRoutineNew.Models;
 
 namespace MyRoutineNew;
 
-public partial class Routine : ContentPage
+public partial class Routine : BaseContentPage
 {
     // ── CODICE DEL COMPAGNO (invariato) ────────────────────
     // (nessun metodo esistente da preservare)
@@ -14,13 +14,8 @@ public partial class Routine : ContentPage
     public Routine()
     {
         InitializeComponent();
-    }
-
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
         LabelMeseCorrente.Text = DateTime.Now.ToString("MMMM yyyy",
-            new System.Globalization.CultureInfo("it-IT"));
+    new System.Globalization.CultureInfo("it-IT"));
         RicostruisciAgenda();
     }
 

@@ -3,7 +3,7 @@ using Microsoft.Maui.Controls.Shapes;
 
 namespace MyRoutineNew
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : BaseContentPage
     {
         // ── CODICE DEL COMPAGNO (invariato) ────────────────────
         int count = 0;
@@ -21,13 +21,9 @@ namespace MyRoutineNew
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
             AggiornaPagina();
         }
+
 
         // Aggiorna tutto: intestazione + progress + task
         private void AggiornaPagina()

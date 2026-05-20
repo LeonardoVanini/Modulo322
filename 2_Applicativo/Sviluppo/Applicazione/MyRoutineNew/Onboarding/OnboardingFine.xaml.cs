@@ -2,6 +2,7 @@ namespace MyRoutineNew.Onboarding;
 
 public partial class OnboardingFine : ContentPage
 {
+
     public OnboardingFine()
     {
         InitializeComponent();

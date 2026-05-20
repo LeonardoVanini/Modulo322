@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<local:BaseContentPage
+    xmlns:local="clr-namespace:MyRoutineNew"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyRoutineNew.MainPage"
@@ -13,7 +14,9 @@
                 <Border Grid.Column="0"
                         WidthRequest="52" HeightRequest="52"
                         BackgroundColor="#F97316" StrokeThickness="0">
-                    <Border.StrokeShape><RoundRectangle CornerRadius="16"/></Border.StrokeShape>
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnAvatarTapped"/>
                     </Border.GestureRecognizers>
@@ -30,7 +33,9 @@
 
                 <Border Grid.Column="2" WidthRequest="36" HeightRequest="36"
                         BackgroundColor="#EDE5D8" StrokeThickness="0" VerticalOptions="Center">
-                    <Border.StrokeShape><RoundRectangle CornerRadius="10"/></Border.StrokeShape>
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10"/>
+                    </Border.StrokeShape>
                     <Label Text="🔔" FontSize="16"
                            HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Border>
@@ -40,7 +45,9 @@
             <Border Margin="20,0,20,20"
                     BackgroundColor="White" Stroke="#E8E0D4"
                     StrokeThickness="1" Padding="18,16">
-                <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18"/>
+                </Border.StrokeShape>
                 <VerticalStackLayout Spacing="12">
                     <Grid ColumnDefinitions="*,Auto">
                         <Label Grid.Column="0" Text="Completamento oggi"
@@ -75,7 +82,9 @@
                     BackgroundColor="White" Stroke="#E8E0D4"
                     StrokeThickness="1" Padding="20,24"
                     IsVisible="False">
-                <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18"/>
+                </Border.StrokeShape>
                 <VerticalStackLayout HorizontalOptions="Center" Spacing="8">
                     <Label Text="📭" FontSize="32" HorizontalTextAlignment="Center"/>
                     <Label Text="Nessuna task per oggi"
@@ -90,4 +99,4 @@
         </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage>
+</local:BaseContentPage>

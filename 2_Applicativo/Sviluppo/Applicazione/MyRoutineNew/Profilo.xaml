@@ -13,7 +13,8 @@
       LabelAvatarIni.Text    = $"{MainCS.Nome[0]}{MainCS.Cognome[0]}";
       BadgeCollection.ItemsSource = listaDiBadge;   // List<Badge>
 -->
-<ContentPage
+<local:BaseContentPage  
+    xmlns:local="clr-namespace:MyRoutineNew"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:models="clr-namespace:MyRoutine.Models"
@@ -245,4 +246,4 @@
         </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage>
+</local:BaseContentPage>

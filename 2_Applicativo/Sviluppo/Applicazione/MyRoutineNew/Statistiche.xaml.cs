@@ -1,10 +1,7 @@
 ﻿namespace MyRoutineNew;
 
-public partial class Statistiche : ContentPage
+public partial class Statistiche : BaseContentPage
 {
-    // ── CODICE DEL COMPAGNO (invariato) ────────────────────
-    // (nessun metodo esistente da preservare)
-    // ───────────────────────────────────────────────────────
 
     public Statistiche()
     {
@@ -15,11 +12,13 @@ public partial class Statistiche : ContentPage
             new System.Globalization.CultureInfo("it-IT"));
 
         // Valori di esempio – sostituire con calcoli reali sulla lista Attivita
-        // quando il compagno avrà implementato il repository dati
+        
         AggiornaStat(taskMese: MainCS.AttivitaMeseCompletate, deltaMese: MainCS.DeltaMese(),
                      streak: MainCS.Streak, recordStreak: MainCS.RecordStreak,
                      completamentoPct: MainCS.CompletamentoPct(), deltaComp: MainCS.DeltaCompletamento(),
                      badgeGuadagnati: MainCS.BadgeGuadagnati(), badgeMancanti: MainCS.BadgeMancanti());
+
+        AggiornaBadgeMissioni();
     }
 
     // Aggiorna tutti i label delle statistiche in un colpo solo.
@@ -47,4 +46,21 @@ public partial class Statistiche : ContentPage
         LabelBadgeCount.Text = badgeGuadagnati.ToString();
         LabelBadgeMancanti.Text = $"{badgeMancanti} ancora da sbloccare";
     }
+
+    private void AggiornaBadgeMissioni()
+    {
+        var completate = MainCS.TotaleAttivitaCompletate();
+        var streak = Math.Max(MainCS.Streak, 1);
+        double pct1 = Math.Min(1, completate / 100.0);
+        ProgressMis1.Progress = pct1;
+        LabelMis1Desc.Text = $"{completate} di 100 task totali";
+        LabelMis1Pct.Text = $"{(int)(pct1*100)}%";
+        double pct2 = Math.Min(1, streak / 5.0);
+        ProgressMis2.Progress = pct2;
+        LabelMis2Pct.Text = $"{Math.Min(streak,5)}/5";
+        double pct3 = Math.Min(1, streak / 30.0);
+        ProgressMis3.Progress = pct3;
+        LabelMis3Pct.Text = $"{Math.Min(streak,30)}/30";
+    }
+
 }
