@@ -110,4 +110,41 @@ public partial class Impostazioni : BaseContentPage
         // Nota: i dati rimangono nelle Preferences, l'utente non deve rifare l'onboarding
     }
 
+
+
+    private void ApplyTheme(string theme)
+    {
+        MainCS.Tema = theme;
+
+        Color bg = Color.FromArgb("#FDF7F0");
+        Color accent = Color.FromArgb("#F97316");
+
+        if (theme == "Ocean")
+        {
+            bg = Color.FromArgb("#EFF6FF");
+            accent = Color.FromArgb("#0EA5E9");
+        }
+        else if (theme == "Night")
+        {
+            bg = Color.FromArgb("#111827");
+            accent = Color.FromArgb("#8B5CF6");
+        }
+
+        BackgroundColor = bg;
+
+        Application.Current.Resources["Accent"] = accent;
+        Application.Current.Resources["Primary"] = accent;
+
+        ThemeSoleil.StrokeThickness = theme == "Soleil" ? 3 : 0;
+        ThemeOcean.StrokeThickness = theme == "Ocean" ? 3 : 0;
+        ThemeNight.StrokeThickness = theme == "Night" ? 3 : 0;
+
+        ThemeSoleil.Stroke = accent;
+        ThemeOcean.Stroke = accent;
+        ThemeNight.Stroke = accent;
+    }
+
+    private void OnThemeSoleilTapped(object sender, TappedEventArgs e) => ApplyTheme("Soleil");
+    private void OnThemeOceanTapped(object sender, TappedEventArgs e) => ApplyTheme("Ocean");
+    private void OnThemeNightTapped(object sender, TappedEventArgs e) => ApplyTheme("Night");
 }

@@ -3,36 +3,60 @@
   "WorkspaceRootPath": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\models\\impostazioniclasse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\models\\impostazioniclasse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\profilo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\profilo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\statistiche.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\statistiche.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\routine.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\routine.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\statistiche.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\statistiche.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\impostazioni.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\impostazioni.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\onboarding\\onboardingdata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\onboarding\\onboardingdata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\routine.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\routine.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\maincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\onboarding\\onboardingdata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\onboarding\\onboardingdata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\resources\\raw\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\resources\\raw\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\profilo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\profilo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\profilo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\profilo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\impostazioni.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|c:\\datiallievo\\modulo322\\2_applicativo\\sviluppo\\applicazione\\myroutinenew\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EB2A91A-1EC2-4677-A5F2-3CFECED2E418}|MyRoutineNew\\MyRoutineNew.csproj|solutionrelative:myroutinenew\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,98 +86,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainCS.cs",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
-              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
-              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ImpostazioniClasse.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Models\\ImpostazioniClasse.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Models\\ImpostazioniClasse.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Models\\ImpostazioniClasse.cs",
+              "RelativeToolTip": "MyRoutineNew\\Models\\ImpostazioniClasse.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T12:18:11.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T13:36:19.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Statistiche.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Statistiche.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml",
+              "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-22T13:32:01.094Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
-              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-08T12:05:06.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml.cs",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml.cs",
               "RelativeToolTip": "MyRoutineNew\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAQwJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:33:58.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T11:33:58.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Statistiche.xaml.cs",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
-              "RelativeDocumentMoniker": "MyRoutineNew\\Statistiche.xaml.cs",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
-              "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:43:36.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Impostazioni.xaml.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\Impostazioni.xaml.cs",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml.cs",
               "RelativeToolTip": "MyRoutineNew\\Impostazioni.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAywBwAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:43:48.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T11:43:48.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Routine.xaml.cs",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
-              "RelativeDocumentMoniker": "MyRoutineNew\\Routine.xaml.cs",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
-              "RelativeToolTip": "MyRoutineNew\\Routine.xaml.cs",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAAABUBAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:43:24.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OnboardingData.xaml",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
-              "RelativeDocumentMoniker": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
-              "RelativeToolTip": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-13T12:27:09.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Profilo.xaml",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Profilo.xaml",
@@ -185,19 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AboutAssets.txt",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
-              "RelativeDocumentMoniker": "MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
-              "RelativeToolTip": "MyRoutineNew\\Resources\\Raw\\AboutAssets.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-05-08T12:04:36.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\App.xaml.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\App.xaml.cs",
@@ -215,13 +164,13 @@
               "RelativeDocumentMoniker": "MyRoutineNew\\Properties\\launchSettings.json",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Properties\\launchSettings.json",
               "RelativeToolTip": "MyRoutineNew\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-05-08T12:04:19.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\MauiProgram.cs",
@@ -233,51 +182,112 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\AppShell.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\AppShell.xaml",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\AppShell.xaml",
               "RelativeToolTip": "MyRoutineNew\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-08T12:41:56.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Profilo.xaml.cs",
-              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml.cs",
-              "RelativeDocumentMoniker": "MyRoutineNew\\Profilo.xaml.cs",
-              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml.cs",
-              "RelativeToolTip": "MyRoutineNew\\Profilo.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswDMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T11:43:06.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "Impostazioni.xaml",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
               "RelativeDocumentMoniker": "MyRoutineNew\\Impostazioni.xaml",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Impostazioni.xaml",
               "RelativeToolTip": "MyRoutineNew\\Impostazioni.xaml",
-              "ViewState": "AgIAACAAAAAAAAAAAADgvyoAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAUwLcAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-08T11:35:04.955Z"
+              "WhenOpened": "2026-05-08T11:35:04.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainPage.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainPage.xaml",
+              "RelativeToolTip": "MyRoutineNew\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-08T12:05:06.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Statistiche.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Statistiche.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Statistiche.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\Statistiche.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:43:36.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainCS.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\MainCS.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\MainCS.cs",
+              "RelativeToolTip": "MyRoutineNew\\MainCS.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:18:11.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profilo.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Profilo.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Profilo.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\Profilo.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:43:06.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OnboardingData.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "RelativeToolTip": "MyRoutineNew\\Onboarding\\OnboardingData.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T12:27:09.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Badge.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Models\\Badge.cs",
               "RelativeDocumentMoniker": "MyRoutineNew\\Models\\Badge.cs",
               "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Models\\Badge.cs",
               "RelativeToolTip": "MyRoutineNew\\Models\\Badge.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T11:33:26.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Routine.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
+              "RelativeDocumentMoniker": "MyRoutineNew\\Routine.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Modulo322\\2_Applicativo\\Sviluppo\\Applicazione\\MyRoutineNew\\Routine.xaml.cs",
+              "RelativeToolTip": "MyRoutineNew\\Routine.xaml.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwH8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:43:24.275Z"
             }
           ]
         }

@@ -116,7 +116,28 @@
                         </VerticalStackLayout>
                         <Label Grid.Column="2" Text="›" FontSize="18" TextColor="#B8A88A" VerticalOptions="Center"/>
                     </Grid>
-                </VerticalStackLayout>
+                
+
+                    <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="#E8E0D4"/>
+
+                    <VerticalStackLayout Padding="16,14" Spacing="12">
+                        <Label Text="Tema app" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
+                        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                            <Border x:Name="ThemeSoleil" StrokeThickness="2" Stroke="#F97316" BackgroundColor="#F97316" WidthRequest="58" HeightRequest="58">
+                                <Border.StrokeShape><RoundRectangle CornerRadius="20"/></Border.StrokeShape>
+                                <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeSoleilTapped"/></Border.GestureRecognizers>
+                            </Border>
+                            <Border x:Name="ThemeOcean" StrokeThickness="0" BackgroundColor="#38BDF8" WidthRequest="58" HeightRequest="58">
+                                <Border.StrokeShape><RoundRectangle CornerRadius="20"/></Border.StrokeShape>
+                                <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeOceanTapped"/></Border.GestureRecognizers>
+                            </Border>
+                            <Border x:Name="ThemeNight" StrokeThickness="0" BackgroundColor="#111827" WidthRequest="58" HeightRequest="58">
+                                <Border.StrokeShape><RoundRectangle CornerRadius="20"/></Border.StrokeShape>
+                                <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeNightTapped"/></Border.GestureRecognizers>
+                            </Border>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+</VerticalStackLayout>
             </Border>
 
             <!-- ══════════════════════════════════
