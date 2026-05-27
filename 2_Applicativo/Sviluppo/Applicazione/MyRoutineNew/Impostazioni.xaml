@@ -119,7 +119,7 @@
                 
 
                     <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="#E8E0D4"/>
-
+<!--
                     <VerticalStackLayout Padding="16,14" Spacing="12">
                         <Label Text="Tema app" FontSize="13" FontAttributes="Bold" TextColor="#1C1409"/>
                         <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
@@ -136,7 +136,7 @@
                                 <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeNightTapped"/></Border.GestureRecognizers>
                             </Border>
                         </HorizontalStackLayout>
-                    </VerticalStackLayout>
+                    </VerticalStackLayout>-->
 </VerticalStackLayout>
             </Border>
 
@@ -146,6 +146,7 @@
             <Label Margin="20,0,20,8" Text="DATI PERSONALI"
                    FontSize="10" FontAttributes="Bold"
                    CharacterSpacing="1.5" TextColor="#7A6850"/>
+            
 
             <Border Margin="16,0,16,20" BackgroundColor="White"
                     Stroke="#E8E0D4" StrokeThickness="1">
@@ -191,6 +192,10 @@
                            TextColor="#F43F5E" VerticalOptions="Center"/>
                 </Grid>
             </Border>
+            <Button
+    Text="Esporta dati JSON"
+    Clicked="ExportDataClicked"/>
+            
 
             <BoxView HeightRequest="20" Color="Transparent"/>
         </VerticalStackLayout>

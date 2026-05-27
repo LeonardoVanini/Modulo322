@@ -1,66 +1,93 @@
-﻿namespace MyRoutineNew;
+using MyRoutine.Models;
+
+namespace MyRoutineNew;
 
 public partial class Statistiche : BaseContentPage
 {
+    private readonly List<BoxView> _bars;
 
     public Statistiche()
     {
         InitializeComponent();
-
-        // Mese corrente nell'header
-        LabelStatsMese.Text = DateTime.Now.ToString("MMMM yyyy",
-            new System.Globalization.CultureInfo("it-IT"));
-
-        // Valori di esempio – sostituire con calcoli reali sulla lista Attivita
-        
-        AggiornaStat(taskMese: MainCS.AttivitaMeseCompletate, deltaMese: MainCS.DeltaMese(),
-                     streak: MainCS.Streak, recordStreak: MainCS.RecordStreak,
-                     completamentoPct: MainCS.CompletamentoPct(), deltaComp: MainCS.DeltaCompletamento(),
-                     badgeGuadagnati: MainCS.BadgeGuadagnati(), badgeMancanti: MainCS.BadgeMancanti());
-
-        AggiornaBadgeMissioni();
+        _bars = new() { BarLun, BarMar, BarMer, BarGio, BarVen, BarSab, BarDom };
+        CaricaStatistiche();
     }
 
-    // Aggiorna tutti i label delle statistiche in un colpo solo.
-    // Chiamare di nuovo questo metodo ogni volta che i dati cambiano.
-    private void AggiornaStat(int taskMese, int deltaMese,
-                               int streak, int recordStreak,
-                               int completamentoPct, int deltaComp,
-                               int badgeGuadagnati, int badgeMancanti)
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        CaricaStatistiche();
+    }
+
+    private void CaricaStatistiche()
+    {
+        LabelStatsMese.Text = DateTime.Now.ToString("MMMM yyyy", new System.Globalization.CultureInfo("it-IT"));
+
+        var tasks = TaskManager.CaricaTutte();
+        var now = DateTime.Now;
+        var mese = tasks.Where(t => t.DateTimeInizio.Month == now.Month && t.DateTimeInizio.Year == now.Year).ToList();
+        var mesePrev = tasks.Where(t => t.DateTimeInizio.Month == now.AddMonths(-1).Month && t.DateTimeInizio.Year == now.AddMonths(-1).Year).ToList();
+
+        int completateMese = mese.Count(t => t.Completata);
+        int completatePrev = mesePrev.Count(t => t.Completata);
+        int pct = mese.Count == 0 ? 0 : (int)((double)completateMese / mese.Count * 100);
+        int pctPrev = mesePrev.Count == 0 ? 0 : (int)((double)completatePrev / mesePrev.Count * 100);
+
+        var badges = BadgeManager.GetBadges();
+
+        AggiornaStat(completateMese, completateMese - completatePrev,
+            TaskManager.CalculateCurrentStreak(), TaskManager.CalculateRecordStreak(),
+            pct, pct - pctPrev, badges.Count(x=>x.Ottenuto), badges.Count(x=>!x.Ottenuto));
+
+        AggiornaGrafico(tasks);
+        AggiornaBadgeMissioni(badges);
+    }
+
+    private void AggiornaGrafico(List<Models.Attivita> tasks)
+    {
+        for (int i = 0; i < 7; i++)
+        {
+            var dayTasks = tasks.Where(t => ((int)t.DateTimeInizio.DayOfWeek + 6) % 7 == i).ToList();
+            double pct = dayTasks.Count == 0 ? 0 : (double)dayTasks.Count(t => t.Completata) / dayTasks.Count;
+            _bars[i].HeightRequest = Math.Max(8, pct * 70);
+            _bars[i].BackgroundColor = pct >= 1 ? Color.FromArgb("#F97316") : Color.FromArgb("#FDBA74");
+        }
+    }
+
+    private void AggiornaStat(int taskMese, int deltaMese, int streak, int recordStreak, int completamentoPct, int deltaComp, int badgeGuadagnati, int badgeMancanti)
     {
         LabelTaskMese.Text = taskMese.ToString();
         LabelTaskMeseDelta.Text = $"{(deltaMese >= 0 ? "↑ +" : "↓ ")}{deltaMese} vs scorso mese";
-        LabelTaskMeseDelta.TextColor = deltaMese >= 0
-            ? Color.FromArgb("#10B981")
-            : Color.FromArgb("#F43F5E");
-
         LabelStreak.Text = $"{streak}🔥";
         LabelStreakRecord.Text = $"Record: {recordStreak} giorni";
-
         LabelCompletamento.Text = $"{completamentoPct}%";
         LabelCompletamentoDelta.Text = $"{(deltaComp >= 0 ? "↑ +" : "↓ ")}{deltaComp}% vs scorso mese";
-        LabelCompletamentoDelta.TextColor = deltaComp >= 0
-            ? Color.FromArgb("#10B981")
-            : Color.FromArgb("#F43F5E");
-
         LabelBadgeCount.Text = badgeGuadagnati.ToString();
         LabelBadgeMancanti.Text = $"{badgeMancanti} ancora da sbloccare";
     }
 
-    private void AggiornaBadgeMissioni()
+    private void AggiornaBadgeMissioni(List<Badge> badges)
     {
-        var completate = MainCS.TotaleAttivitaCompletate();
-        var streak = Math.Max(MainCS.Streak, 1);
-        double pct1 = Math.Min(1, completate / 100.0);
-        ProgressMis1.Progress = pct1;
-        LabelMis1Desc.Text = $"{completate} di 100 task totali";
-        LabelMis1Pct.Text = $"{(int)(pct1*100)}%";
-        double pct2 = Math.Min(1, streak / 5.0);
-        ProgressMis2.Progress = pct2;
-        LabelMis2Pct.Text = $"{Math.Min(streak,5)}/5";
-        double pct3 = Math.Min(1, streak / 30.0);
-        ProgressMis3.Progress = pct3;
-        LabelMis3Pct.Text = $"{Math.Min(streak,30)}/30";
+        var nearest = badges.OrderByDescending(b => b.Percentuale).Take(3).ToList();
+        if (nearest.Count < 3) return;
+
+        ApplyBadge(nearest[0], LabelMis1Nome, LabelMis1Desc, LabelMis1Pct, ProgressMis1);
+        ApplyBadge(nearest[1], LabelMis2Nome, LabelMis2Desc, LabelMis2Pct, ProgressMis2);
+        ApplyBadge(nearest[2], LabelMis3Nome, LabelMis3Desc, LabelMis3Pct, ProgressMis3);
     }
 
+    private void ApplyBadge(Badge badge, Label title, Label desc, Label pct, ProgressBar progress)
+    {
+        title.Text = $"{badge.Emoji} {badge.Nome}";
+        desc.Text = badge.Descrizione;
+        pct.Text = $"{badge.Progress}/{badge.Goal}";
+        progress.Progress = badge.Percentuale;
+
+        if (badge.Ottenuto)
+        {
+            title.TextColor = Color.FromArgb("#F97316");
+            pct.TextColor = Color.FromArgb("#F97316");
+            progress.ProgressColor = Color.FromArgb("#F97316");
+        }
+    }
 }

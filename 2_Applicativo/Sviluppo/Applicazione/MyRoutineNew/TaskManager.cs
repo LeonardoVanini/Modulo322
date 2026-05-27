@@ -127,6 +127,55 @@ namespace MyRoutineNew
                 .ToDictionary(g => g.Key, g => g.OrderBy(t => t.DateTimeInizio).ToList());
         }
 
+
+        public static int CalculateCurrentStreak()
+        {
+            var completedDays = CaricaTutte()
+                .Where(t => t.Completata)
+                .Select(t => t.DateTimeInizio.Date)
+                .Distinct()
+                .OrderByDescending(d => d)
+                .ToList();
+
+            int streak = 0;
+            var day = DateTime.Today;
+
+            while (completedDays.Contains(day))
+            {
+                streak++;
+                day = day.AddDays(-1);
+            }
+
+            return streak;
+        }
+
+        public static int CalculateRecordStreak()
+        {
+            var days = CaricaTutte()
+                .Where(t => t.Completata)
+                .Select(t => t.DateTimeInizio.Date)
+                .Distinct()
+                .OrderBy(d => d)
+                .ToList();
+
+            int best = 0;
+            int current = 0;
+            DateTime? previous = null;
+
+            foreach (var day in days)
+            {
+                if (previous == null || day == previous.Value.AddDays(1))
+                    current++;
+                else
+                    current = 1;
+
+                best = Math.Max(best, current);
+                previous = day;
+            }
+
+            return best;
+        }
+
         /// <summary>Elimina tutte le task (usato nel reset profilo).</summary>
         public static void EliminaTutte()
         {

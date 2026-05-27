@@ -24,6 +24,12 @@ namespace MyRoutineNew
             AggiornaPagina();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            AggiornaPagina();
+        }
+
 
         // Aggiorna tutto: intestazione + progress + task
         private void AggiornaPagina()

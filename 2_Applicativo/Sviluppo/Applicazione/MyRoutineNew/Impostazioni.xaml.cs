@@ -1,6 +1,8 @@
 
 ﻿
 using MyRoutineNew.Models;
+using System.Text.Json;
+
 
 
 namespace MyRoutineNew;
@@ -147,4 +149,51 @@ public partial class Impostazioni : BaseContentPage
     private void OnThemeSoleilTapped(object sender, TappedEventArgs e) => ApplyTheme("Soleil");
     private void OnThemeOceanTapped(object sender, TappedEventArgs e) => ApplyTheme("Ocean");
     private void OnThemeNightTapped(object sender, TappedEventArgs e) => ApplyTheme("Night");
+
+
+    private async void ExportDataClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            var backupData = new UserBackupData
+            {
+                Nome = MainCS.Nome,
+                Cognome = MainCS.Cognome,
+
+                Tasks = TaskManager.CaricaTutte(),
+                Badges = BadgeManager.GetBadges(),
+
+                CurrentStreak = MainCS.Streak,
+                BestStreak = MainCS.RecordStreak,
+
+                TotalCompletedTasks = MainCS.TotaleAttivitaCompletate(), // Corretto metodo chiamato qui
+
+                ExportDate = DateTime.Now
+            };
+
+            string json = JsonSerializer.Serialize(
+                backupData,
+                new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
+
+            string fileName = $"MyRoutineBackup_{DateTime.Now:yyyyMMdd_HHmmss}.json";
+
+            string filePath = Path.Combine(FileSystem.CacheDirectory, fileName);
+
+            File.WriteAllText(filePath, json);
+
+            await Share.Default.RequestAsync(new ShareFileRequest
+            {
+                Title = "Esporta dati",
+                File = new ShareFile(filePath)
+            });
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Errore", ex.Message, "OK");
+        }
+    }
+
 }
