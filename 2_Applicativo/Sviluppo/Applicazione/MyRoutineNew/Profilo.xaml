@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--
-    Profilo.xaml  –  Schermata Profilo
 
-    Proprietà C# usate:
-      MainCS.Nome / Cognome     → LabelNomeCognome
-      Badge.Nome                → LabelBadgeNome (DataTemplate CollectionView)
-      Badge.Descrizione         → tooltip / accessibilità
-      Badge.Ottenuto (bool)     → BackgroundColor del badge (guadagnato vs bloccato)
-
-    Nel code-behind (Profilo.xaml.cs):
-      LabelNomeCognome.Text  = $"{MainCS.Nome} {MainCS.Cognome}";
-      LabelAvatarIni.Text    = $"{MainCS.Nome[0]}{MainCS.Cognome[0]}";
-      BadgeCollection.ItemsSource = listaDiBadge;   // List<Badge>
--->
 <local:BaseContentPage  
     xmlns:local="clr-namespace:MyRoutineNew"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -24,9 +11,7 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- ════════════════════════════════
-                 HERO  –  Avatar grande + nome
-            ════════════════════════════════ -->
+
             <VerticalStackLayout
                 Padding="20,48,20,24"
                 HorizontalOptions="Center"
@@ -71,9 +56,6 @@
 
             </VerticalStackLayout>
 
-            <!-- ════════════════════════════════
-                 STATISTICHE RAPIDE  (3 pillole)
-            ════════════════════════════════ -->
             <Grid
                 Margin="20,0,20,20"
                 ColumnDefinitions="*,*,*"
@@ -165,9 +147,6 @@
                 HeightRequest="1"
                 BackgroundColor="{StaticResource BorderColor}"/>
 
-            <!-- ════════════════════════════════
-                 TITOLO SEZIONE BADGE
-            ════════════════════════════════ -->
             <Label
                 Margin="20,0,20,12"
                 Text="BADGE"
@@ -176,11 +155,6 @@
                 CharacterSpacing="1.5"
                 TextColor="{StaticResource TextSecondary}"/>
 
-            <!-- ════════════════════════════════
-                 GRIGLIA BADGE  –  4 colonne
-                 ItemsSource = List<Badge> dal code-behind
-                 Badge.Ottenuto controlla il colore sfondo
-            ════════════════════════════════ -->
             <CollectionView
                 x:Name="BadgeCollection"
                 Margin="20,0,20,20"
@@ -201,12 +175,7 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="14"/>
                             </Border.StrokeShape>
-                            <!--
-                                BackgroundColor: impostare via DataTrigger o Converter
-                                in base a Badge.Ottenuto:
-                                  true  → Accent (#F97316)
-                                  false → BgMuted (#EDE5D8) + Opacity 0.4
-                            -->
+
                             <Border.Triggers>
                                 <DataTrigger
                                     TargetType="Border"

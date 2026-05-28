@@ -5,7 +5,7 @@ namespace MyRoutineNew
 {
     public partial class MainPage : BaseContentPage
     {
-        // ── CODICE DEL COMPAGNO (invariato) ────────────────────
+
         int count = 0;
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -16,7 +16,7 @@ namespace MyRoutineNew
         private void test2(object sender, EventArgs e) { MainCS.PerProfilo(Navigation); }
         private void test3(object sender, EventArgs e) { MainCS.PerRoutine(Navigation); }
         private void test4(object sender, EventArgs e) { MainCS.PerStatistiche(Navigation); }
-        // ───────────────────────────────────────────────────────
+
 
         public MainPage()
         {

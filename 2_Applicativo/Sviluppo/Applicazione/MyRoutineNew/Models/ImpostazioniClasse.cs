@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +15,16 @@ namespace MyRoutineNew.Models
         //preferenze
         private string _lingua;
         private TimeOnly _inizioGiornata;
+        private string _tema;  // Nuovo: tema dell'app
 
-        public ImpostazioniClasse(bool promemoria, bool avvisi, bool report, string lingua, TimeOnly inizioGiornata)
+        public ImpostazioniClasse(bool promemoria, bool avvisi, bool report, string lingua, TimeOnly inizioGiornata, string tema = "Soleil")
         {
             _promemoria = promemoria;
             _avvisi = avvisi;
             _report = report;
             _lingua = lingua;
             _inizioGiornata = inizioGiornata;
+            _tema = tema;
         }
 
         public bool Promemoria
@@ -55,8 +57,10 @@ namespace MyRoutineNew.Models
             set { _inizioGiornata = value; }
         }
 
-
-
-
+        public string Tema
+        {
+            get { return _tema; }
+            set { _tema = value; }
+        }
     }
 }

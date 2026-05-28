@@ -22,9 +22,7 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- ════════════════════════════════
-                 HEADER
-            ════════════════════════════════ -->
+
             <VerticalStackLayout Padding="20,48,20,16" Spacing="4">
                 <Label
                     Text="Statistiche"
@@ -38,9 +36,7 @@
                     TextColor="{StaticResource TextSecondary}"/>
             </VerticalStackLayout>
 
-            <!-- ════════════════════════════════
-                 GRIGLIA KPI  (2 × 2)
-            ════════════════════════════════ -->
+
             <Grid
                 Margin="20,0,20,16"
                 ColumnDefinitions="*,*"
@@ -110,12 +106,7 @@
 
             </Grid>
 
-            <!-- ════════════════════════════════
-                 PERIODO PIÙ DENSO  (grafico barre semplice)
-                 Le altezze delle BoxView sono impostate da code-behind
-                 in base al numero di task per giorno della settimana.
-                 Nomi label: BarLun, BarMar … BarDom
-            ════════════════════════════════ -->
+
             <Border
                 Margin="20,0,20,16"
                 BackgroundColor="{StaticResource BgCard}"
@@ -156,13 +147,7 @@
                 </VerticalStackLayout>
             </Border>
 
-            <!-- ════════════════════════════════
-                 SEZIONE MISSIONI BADGE
-                 Mostra i badge NON ancora ottenuti (Badge.Ottenuto == false)
-                 con barra di avanzamento missione.
-                 Popolare BadgeMissioniCollection da code-behind con:
-                   lista di Badge dove Ottenuto == false
-            ════════════════════════════════ -->
+
             <Label
                 Margin="20,0,20,12"
                 Text="MISSIONI BADGE"

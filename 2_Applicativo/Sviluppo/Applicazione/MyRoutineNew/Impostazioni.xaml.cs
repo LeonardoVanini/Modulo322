@@ -1,5 +1,4 @@
 
-﻿
 using MyRoutineNew.Models;
 using System.Text.Json;
 
@@ -10,26 +9,20 @@ namespace MyRoutineNew;
 public partial class Impostazioni : BaseContentPage
 {
 
-    // ── CODICE DEL COMPAGNO (invariato) ────────────────────
-    // (nessun metodo esistente da preservare)
-    // ───────────────────────────────────────────────────────
-    
     public Impostazioni()
     {
         InitializeComponent();
 
-
-        MainCS.Impostazioni = new ImpostazioniClasse(false,true,false,"Italiano",new TimeOnly(6,5));// esempio, da inserire nella pagina del primo accesso
+        MainCS.Impostazioni = new ImpostazioniClasse(false, true, false, "Italiano", new TimeOnly(6, 5), "Soleil");
 
         SwitchPromemoria.IsToggled = MainCS.Impostazioni.Promemoria;
         SwitchBadge.IsToggled = MainCS.Impostazioni.Avvisi;
         SwitchReport.IsToggled = MainCS.Impostazioni.Report;
         LabelLinguaValore.Text = MainCS.Impostazioni.Lingua;
-        LabelInizioGiornata.Text =MainCS.Impostazioni.InizioGiornata.ToString("HH:mm");
+        LabelInizioGiornata.Text = MainCS.Impostazioni.InizioGiornata.ToString("HH:mm");
 
-        // Carica valori salvati in MainCS (se già impostati) || fatto
-        // Lingua e orario inizio giornata non sono ancora in MainCS: || fatto
-        // aggiungere le proprietà quando il compagno implementerà il salvataggio 
+        // Aggiorna il selettore di tema in base al tema attuale
+        AggiornaSelettoreTema();
 
     }
 
@@ -37,12 +30,18 @@ public partial class Impostazioni : BaseContentPage
 
     private void OnSwitchPromemoriaToggled(object sender, ToggledEventArgs e)
     {
-        // Collegare al sistema di notifiche quando implementato
+        MainCS.Impostazioni.Promemoria = e.Value;
     }
 
-    private void OnSwitchBadgeToggled(object sender, ToggledEventArgs e) { }
+    private void OnSwitchBadgeToggled(object sender, ToggledEventArgs e)
+    {
+        MainCS.Impostazioni.Avvisi = e.Value;
+    }
 
-    private void OnSwitchReportToggled(object sender, ToggledEventArgs e) { }
+    private void OnSwitchReportToggled(object sender, ToggledEventArgs e)
+    {
+        MainCS.Impostazioni.Report = e.Value;
+    }
 
     // ── Preferenze ──────────────────────────────────────────
 
@@ -53,7 +52,10 @@ public partial class Impostazioni : BaseContentPage
             "Italiano", "English", "Español", "Français");
 
         if (!string.IsNullOrEmpty(scelta) && scelta != "Annulla")
+        {
             LabelLinguaValore.Text = scelta;
+            MainCS.Impostazioni.Lingua = scelta;
+        }
     }
 
     private async void OnInizioGiornataTapped(object sender, TappedEventArgs e)
@@ -65,15 +67,160 @@ public partial class Impostazioni : BaseContentPage
             keyboard: Keyboard.Numeric, maxLength: 5);
 
         if (!string.IsNullOrWhiteSpace(ora))
+        {
             LabelInizioGiornata.Text = ora;
+            if (TimeOnly.TryParse(ora, out TimeOnly nuovoOrario))
+            {
+                MainCS.Impostazioni.InizioGiornata = nuovoOrario;
+            }
+        }
     }
 
-    // ── Riconfigura dati  ────────────────────────────
+    // ── SELETTORE TEMA ──────────────────────────────────────
 
+    private void AggiornaSelettoreTema()
+    {
+        // Ripristina lo stato dei bordi di tutti i temi
+        ThemeSoleil.StrokeThickness = 0;
+        ThemeNightForest.StrokeThickness = 0;
+
+        // Evidenzia il tema attualmente selezionato
+        if (MainCS.Impostazioni.Tema == "Soleil")
+        {
+            ThemeSoleil.StrokeThickness = 3;
+            ThemeSoleil.Stroke = Color.FromArgb("#F97316");
+        }
+        else if (MainCS.Impostazioni.Tema == "NightForest")
+        {
+            ThemeNightForest.StrokeThickness = 3;
+            ThemeNightForest.Stroke = Color.FromArgb("#00D9FF");
+        }
+    }
+
+    private void OnThemeSoleilTapped(object sender, TappedEventArgs e)
+    {
+        CambiatTema("Soleil");
+    }
+
+    private void OnThemeNightForestTapped(object sender, TappedEventArgs e)
+    {
+        CambiatTema("NightForest");
+    }
+
+    private void CambiatTema(string nomeTema)
+    {
+        // Salva il tema nelle impostazioni
+        MainCS.Impostazioni.Tema = nomeTema;
+
+        // Carica i colori appropriati
+        CaricaColoriTema(nomeTema);
+
+        // Aggiorna il selettore visivo
+        AggiornaSelettoreTema();
+    }
+
+
+    private void CaricaColoriTema(string nomeTema)
+    {
+        var appResources = Application.Current?.Resources;
+        if (appResources == null) return;
+
+        if (nomeTema == "Soleil")
+        {
+            // ── TEMA SOLEIL (Arancio/Caldo) ──────────────────────────────────
+            appResources["BgPage"] = Color.FromArgb("#FDF7F0");
+            appResources["BgCard"] = Color.FromArgb("#FFFFFF");
+            appResources["BgSurface"] = Color.FromArgb("#F5EFE6");
+            appResources["BgMuted"] = Color.FromArgb("#EDE5D8");
+
+            appResources["Accent"] = Color.FromArgb("#F97316");
+            appResources["AccentSoft"] = Color.FromArgb("#FED7AA");
+            appResources["AccentGreen"] = Color.FromArgb("#10B981");
+            appResources["AccentRed"] = Color.FromArgb("#F43F5E");
+
+            appResources["TextPrimary"] = Color.FromArgb("#1C1409");
+            appResources["TextSecondary"] = Color.FromArgb("#7A6850");
+            appResources["TextMuted"] = Color.FromArgb("#B8A88A");
+
+            appResources["BorderColor"] = Color.FromArgb("#E8E0D4");
+            appResources["NavBg"] = Color.FromArgb("#FFFFFF");
+            appResources["NavUnselected"] = Color.FromArgb("#B8A88A");
+
+            appResources["ProgressBg"] = Color.FromArgb("#EDE5D8");
+            appResources["ProgressFill"] = Color.FromArgb("#F97316");
+
+            appResources["BadgeEarned"] = Color.FromArgb("#F97316");
+            appResources["BadgeLocked"] = Color.FromArgb("#EDE5D8");
+
+            // Colori di compatibilità
+            appResources["Primary"] = Color.FromArgb("#F97316");
+            appResources["PrimaryDark"] = Color.FromArgb("#EA580C");
+            appResources["Secondary"] = Color.FromArgb("#FED7AA");
+            appResources["Tertiary"] = Color.FromArgb("#10B981");
+            appResources["Gray100"] = Color.FromArgb("#F5EFE6");
+            appResources["Gray200"] = Color.FromArgb("#EDE5D8");
+            appResources["Gray300"] = Color.FromArgb("#E8E0D4");
+            appResources["Gray400"] = Color.FromArgb("#B8A88A");
+            appResources["Gray500"] = Color.FromArgb("#7A6850");
+            appResources["Gray600"] = Color.FromArgb("#5C4A36");
+            appResources["Gray900"] = Color.FromArgb("#2E1F0E");
+            appResources["Gray950"] = Color.FromArgb("#1C1409");
+        }
+        else if (nomeTema == "NightForest")
+        {
+            // ── TEMA NIGHT FOREST (Blu/Freddo) ──────────────────────────────
+            appResources["BgPage"] = Color.FromArgb("#0F1419");
+            appResources["BgCard"] = Color.FromArgb("#1A232F");
+            appResources["BgSurface"] = Color.FromArgb("#243447");
+            appResources["BgMuted"] = Color.FromArgb("#2D3E4F");
+
+            appResources["Accent"] = Color.FromArgb("#00D9FF");
+            appResources["AccentSoft"] = Color.FromArgb("#4DF2FF");
+            appResources["AccentGreen"] = Color.FromArgb("#00E5A0");
+            appResources["AccentRed"] = Color.FromArgb("#FF4757");
+
+            appResources["TextPrimary"] = Color.FromArgb("#E8F4F8");
+            appResources["TextSecondary"] = Color.FromArgb("#A8C5D4");
+            appResources["TextMuted"] = Color.FromArgb("#7A8FA3");
+
+            appResources["BorderColor"] = Color.FromArgb("#364A5C");
+            appResources["NavBg"] = Color.FromArgb("#1A232F");
+            appResources["NavUnselected"] = Color.FromArgb("#7A8FA3");
+
+            appResources["ProgressBg"] = Color.FromArgb("#2D3E4F");
+            appResources["ProgressFill"] = Color.FromArgb("#00D9FF");
+
+            appResources["BadgeEarned"] = Color.FromArgb("#00D9FF");
+            appResources["BadgeLocked"] = Color.FromArgb("#2D3E4F");
+
+            // Colori di compatibilità
+            appResources["Primary"] = Color.FromArgb("#00D9FF");
+            appResources["PrimaryDark"] = Color.FromArgb("#0099B3");
+            appResources["Secondary"] = Color.FromArgb("#4DF2FF");
+            appResources["Tertiary"] = Color.FromArgb("#00E5A0");
+            appResources["Gray100"] = Color.FromArgb("#243447");
+            appResources["Gray200"] = Color.FromArgb("#2D3E4F");
+            appResources["Gray300"] = Color.FromArgb("#364A5C");
+            appResources["Gray400"] = Color.FromArgb("#7A8FA3");
+            appResources["Gray500"] = Color.FromArgb("#A8C5D4");
+            appResources["Gray600"] = Color.FromArgb("#C0D3E0");
+            appResources["Gray900"] = Color.FromArgb("#1A232F");
+            appResources["Gray950"] = Color.FromArgb("#0F1419");
+        }
+
+        // Aggiorna il colore di sfondo della pagina corrente
+        MainThread.BeginInvokeOnMainThread(() =>
+        {
+            if (appResources.TryGetValue("BgPage", out var bgColor) && bgColor is Color color)
+            {
+                this.BackgroundColor = color;
+            }
+        });
+    }
+
+    // ── Riconfigura dati  ────────────────────────────────
 
     private async void OnRiconfiguraTapped(object sender, TappedEventArgs e)
-
-    
     {
         bool conferma = await DisplayAlert(
             "Riconfigura i miei dati",
@@ -92,13 +239,13 @@ public partial class Impostazioni : BaseContentPage
         Application.Current.MainPage = new NavigationPage(new Onboarding.OnboardingNome())
         {
             BarBackgroundColor = Color.FromArgb("#FDF7F0"),
-            BarTextColor       = Color.FromArgb("#1C1409")
+            BarTextColor = Color.FromArgb("#1C1409")
         };
     }
 
     // ── Esci ────────────────────────────────────────────────
 
-    private async void OnEsciTapped(object sender, TappedEventArgs e)//più che esci si potrebbe mettere un reset no? perchè esci è legato a un account, reset ale informazioni. solo un cosiglio
+    private async void OnEsciTapped(object sender, TappedEventArgs e)
     {
         bool conferma = await DisplayAlert(
             "Esci", "Sei sicuro di voler uscire?",
@@ -106,50 +253,10 @@ public partial class Impostazioni : BaseContentPage
 
         if (!conferma) return;
 
-        MainCS.Nome    = null;
+        MainCS.Nome = null;
         MainCS.Cognome = null;
-        MainCS.Tema    = null;
-        // Nota: i dati rimangono nelle Preferences, l'utente non deve rifare l'onboarding
+        MainCS.Tema = MainCS.Impostazioni.Tema;
     }
-
-
-
-    private void ApplyTheme(string theme)
-    {
-        MainCS.Tema = theme;
-
-        Color bg = Color.FromArgb("#FDF7F0");
-        Color accent = Color.FromArgb("#F97316");
-
-        if (theme == "Ocean")
-        {
-            bg = Color.FromArgb("#EFF6FF");
-            accent = Color.FromArgb("#0EA5E9");
-        }
-        else if (theme == "Night")
-        {
-            bg = Color.FromArgb("#111827");
-            accent = Color.FromArgb("#8B5CF6");
-        }
-
-        BackgroundColor = bg;
-
-        Application.Current.Resources["Accent"] = accent;
-        Application.Current.Resources["Primary"] = accent;
-
-        ThemeSoleil.StrokeThickness = theme == "Soleil" ? 3 : 0;
-        ThemeOcean.StrokeThickness = theme == "Ocean" ? 3 : 0;
-        ThemeNight.StrokeThickness = theme == "Night" ? 3 : 0;
-
-        ThemeSoleil.Stroke = accent;
-        ThemeOcean.Stroke = accent;
-        ThemeNight.Stroke = accent;
-    }
-
-    private void OnThemeSoleilTapped(object sender, TappedEventArgs e) => ApplyTheme("Soleil");
-    private void OnThemeOceanTapped(object sender, TappedEventArgs e) => ApplyTheme("Ocean");
-    private void OnThemeNightTapped(object sender, TappedEventArgs e) => ApplyTheme("Night");
-
 
     private async void ExportDataClicked(object sender, EventArgs e)
     {
@@ -166,7 +273,7 @@ public partial class Impostazioni : BaseContentPage
                 CurrentStreak = MainCS.Streak,
                 BestStreak = MainCS.RecordStreak,
 
-                TotalCompletedTasks = MainCS.TotaleAttivitaCompletate(), // Corretto metodo chiamato qui
+                TotalCompletedTasks = MainCS.TotaleAttivitaCompletate(),
 
                 ExportDate = DateTime.Now
             };
