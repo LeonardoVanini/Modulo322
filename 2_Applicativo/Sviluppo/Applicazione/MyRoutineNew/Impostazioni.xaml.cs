@@ -22,7 +22,7 @@ public partial class Impostazioni : BaseContentPage
         LabelInizioGiornata.Text = MainCS.Impostazioni.InizioGiornata.ToString("HH:mm");
 
         // Aggiorna il selettore di tema in base al tema attuale
-        AggiornaSelettoreTema();
+        //AggiornaSelettoreTema();
 
     }
 
@@ -77,7 +77,7 @@ public partial class Impostazioni : BaseContentPage
     }
 
     // ── SELETTORE TEMA ──────────────────────────────────────
-
+    /*
     private void AggiornaSelettoreTema()
     {
         // Ripristina lo stato dei bordi di tutti i temi
@@ -216,7 +216,7 @@ public partial class Impostazioni : BaseContentPage
                 this.BackgroundColor = color;
             }
         });
-    }
+    }*/
 
     // ── Riconfigura dati  ────────────────────────────────
 

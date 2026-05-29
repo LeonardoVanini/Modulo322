@@ -1,0 +1,31 @@
+appId: com.companyname.myroutinenew
+---
+- launchApp
+- startRecording: recording       # Starts capturing a video of the execution
+- tapOn: "🗓️"
+- tapOn: "+ Aggiungi Task"
+- inputText: AutomationTest
+- tapOn: "Avanti"
+- tapOn: "Lavoro"
+- eraseText: 10
+- inputText: 29/05/2026
+- tapOn: "Avanti"
+- eraseText: 5
+- inputText: "18:30"
+- tapOn: "Avanti"
+- eraseText: 5
+- inputText: "19:00"
+- tapOn: "Salva"
+- tapOn: "⚙️"
+- scroll
+- tapOn: "Riconfigura i miei dati"
+- tapOn: "Sì, riconfigura"
+- tapOn: "Es. Marco"
+- inputText: "Test"
+- tapOn: "Avanti →"
+- tapOn: "Es. Rossi"
+- inputText: "Automation"
+- tapOn: "Avanti →"
+- tapOn: "29 maggio 2008"
+- tapOn: ">"
+- stopRecording                   # Saves the video file

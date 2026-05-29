@@ -280,7 +280,7 @@ public partial class Routine : BaseContentPage
             "Nuova Task", "Data (gg/mm/aaaa):",
             accept: "Avanti", cancel: "Annulla",
             initialValue: DateTime.Today.ToString("dd/MM/yyyy"),
-            maxLength: 10, keyboard: Keyboard.Numeric);
+            maxLength: 10);
         if (!DateTime.TryParseExact(dataStr, "dd/MM/yyyy",
             System.Globalization.CultureInfo.InvariantCulture,
             System.Globalization.DateTimeStyles.None, out var data))
@@ -291,7 +291,7 @@ public partial class Routine : BaseContentPage
             "Nuova Task", "Ora inizio (HH:mm):",
             accept: "Avanti", cancel: "Annulla",
             initialValue: DateTime.Now.ToString("HH:00"),
-            maxLength: 5, keyboard: Keyboard.Numeric);
+            maxLength: 5);
         if (!TimeSpan.TryParseExact(inizio, @"hh\:mm",
             System.Globalization.CultureInfo.InvariantCulture, out var tsInizio))
             tsInizio = TimeSpan.FromHours(DateTime.Now.Hour);
@@ -301,7 +301,7 @@ public partial class Routine : BaseContentPage
             "Nuova Task", "Ora fine (HH:mm):",
             accept: "Salva", cancel: "Annulla",
             initialValue: (DateTime.Now.Hour + 1).ToString("00") + ":00",
-            maxLength: 5, keyboard: Keyboard.Numeric);
+            maxLength: 5);
         if (!TimeSpan.TryParseExact(fine, @"hh\:mm",
             System.Globalization.CultureInfo.InvariantCulture, out var tsFine))
             tsFine = tsInizio.Add(TimeSpan.FromHours(1));

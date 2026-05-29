@@ -119,24 +119,24 @@
                 
                     <BoxView HeightRequest="1" Margin="16,0" BackgroundColor="{StaticResource BorderColor}"/>
 
-                    <!-- ── SELETTORE TEMA ── -->
+                    <!-- ── SELETTORE TEMA ── 
                     <VerticalStackLayout Padding="16,14" Spacing="12">
                         <Label Text="Tema app" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}"/>
                         <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
-                            <!-- Tema Soleil (Arancio) -->
+                            
                             <Border x:Name="ThemeSoleil" StrokeThickness="3" Stroke="{StaticResource Accent}" 
                                     BackgroundColor="#F97316" WidthRequest="58" HeightRequest="58">
                                 <Border.StrokeShape><RoundRectangle CornerRadius="20"/></Border.StrokeShape>
                                 <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeSoleilTapped"/></Border.GestureRecognizers>
                             </Border>
-                            <!-- Tema Foresta Notturna (Blu/Ciano) -->
+                            
                             <Border x:Name="ThemeNightForest" StrokeThickness="0" BackgroundColor="#00D9FF" 
                                     WidthRequest="58" HeightRequest="58">
                                 <Border.StrokeShape><RoundRectangle CornerRadius="20"/></Border.StrokeShape>
                                 <Border.GestureRecognizers><TapGestureRecognizer Tapped="OnThemeNightForestTapped"/></Border.GestureRecognizers>
                             </Border>
                         </HorizontalStackLayout>
-                    </VerticalStackLayout>
+                    </VerticalStackLayout>-->
                 </VerticalStackLayout>
             </Border>
 

@@ -44,7 +44,7 @@
                 ColumnSpacing="10"
                 RowSpacing="10">
 
-                <!-- Task ce mese -->
+                <!-- Task questo mese -->
                 <Border
                     Grid.Row="0" Grid.Column="0"
                     BackgroundColor="{StaticResource BgCard}"
@@ -53,7 +53,7 @@
                     Padding="16,14">
                     <Border.StrokeShape><RoundRectangle CornerRadius="18"/></Border.StrokeShape>
                     <VerticalStackLayout Spacing="4">
-                        <Label Text="Task ce mese" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
+                        <Label Text="Task questo mese" FontSize="10" TextColor="{StaticResource TextSecondary}"/>
                         <Label x:Name="LabelTaskMese" Text="38" FontSize="26" FontAttributes="Bold" TextColor="{StaticResource Accent}"/>
                         <Label x:Name="LabelTaskMeseDelta" Text="↑ +12 vs scorso mese" FontSize="10" TextColor="{StaticResource AccentGreen}" FontAttributes="Bold"/>
                     </VerticalStackLayout>
