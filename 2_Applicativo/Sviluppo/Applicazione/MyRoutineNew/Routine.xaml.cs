@@ -275,16 +275,28 @@ public partial class Routine : BaseContentPage
             "Fitness", "Benessere", "Studio", "Lavoro", "Hobby", "Altro");
         if (string.IsNullOrEmpty(categoria) || categoria == "Annulla") categoria = "Altro";
 
+        
         // Step 3: Data (usa DateTime.Today come default)
         string dataStr = await DisplayPromptAsync(
             "Nuova Task", "Data (gg/mm/aaaa):",
             accept: "Avanti", cancel: "Annulla",
             initialValue: DateTime.Today.ToString("dd/MM/yyyy"),
             maxLength: 10);
-        if (!DateTime.TryParseExact(dataStr, "dd/MM/yyyy",
-            System.Globalization.CultureInfo.InvariantCulture,
-            System.Globalization.DateTimeStyles.None, out var data))
-            data = DateTime.Today;
+
+        if (!DateTime.TryParse(
+                dataStr,
+                new System.Globalization.CultureInfo("it-IT"),
+                System.Globalization.DateTimeStyles.None,
+                out var data))
+        {
+            await DisplayAlert(
+                "Errore",
+                $"Data non valida: {dataStr}",
+                "OK");
+            return;
+        }
+
+        
 
         // Step 4: Ora inizio
         string inizio = await DisplayPromptAsync(
