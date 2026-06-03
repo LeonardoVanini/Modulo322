@@ -1,2 +1,0 @@
-dotnet workload repair
-dotnet workload install maui
